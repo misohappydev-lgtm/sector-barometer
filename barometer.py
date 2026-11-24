@@ -447,8 +447,8 @@ def build_insights(rows: list[dict], summary: dict, sh: dict) -> tuple[list[dict
         spy = summary.get(f"spy_ret_{k}")
         txt = (f"{mood_word.get(summary.get(f'mood_{k}'), 'mixed').capitalize()}"
                + (f", S&P 500 {_p(spy)}" if spy is not None else "")
-               + ". Led by " + " and ".join(f"{r['name']} ({_p(r[col])})" for _, r in lead.iterrows())
-               + "; lagging " + " and ".join(f"{r['name']} ({_p(r[col])})" for _, r in lag.iterrows()) + ".")
+               + ". Best vs the S&P 500: " + " and ".join(f"{r['name']} ({_p(r[col])})" for _, r in lead.iterrows())
+               + "; worst: " + " and ".join(f"{r['name']} ({_p(r[col])})" for _, r in lag.iterrows()) + ".")
         out.append({"kind": "story", "ticker": k, "name": lab, "score": 0, "reason": txt})
 
     moods = [summary.get(f"mood_{k}") for k, _ in order]
