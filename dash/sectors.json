@@ -20,7 +20,11 @@
 "ret_4w": -0.1285,
 "rel_4w": -0.0722,
 "rel_prev_4w": -0.0419,
-"flow_4w": "out"
+"flow_4w": "out",
+"ret_3m": -0.1055,
+"rel_3m": -0.0509,
+"rel_prev_3m": -0.0402,
+"flow_3m": "out"
 },
 {
 "ticker": "XLI",
@@ -43,7 +47,11 @@
 "ret_4w": -0.0269,
 "rel_4w": 0.0294,
 "rel_prev_4w": -0.0105,
-"flow_4w": "in"
+"flow_4w": "in",
+"ret_3m": -0.0868,
+"rel_3m": -0.0322,
+"rel_prev_3m": 0.003,
+"flow_3m": "out"
 },
 {
 "ticker": "XLC",
@@ -66,7 +74,11 @@
 "ret_4w": -0.0024,
 "rel_4w": 0.0539,
 "rel_prev_4w": -0.0656,
-"flow_4w": "in"
+"flow_4w": "in",
+"ret_3m": -0.0816,
+"rel_3m": -0.027,
+"rel_prev_3m": -0.041,
+"flow_3m": "flat"
 },
 {
 "ticker": "XLE",
@@ -89,7 +101,11 @@
 "ret_4w": -0.1403,
 "rel_4w": -0.084,
 "rel_prev_4w": 0.1217,
-"flow_4w": "out"
+"flow_4w": "out",
+"ret_3m": -0.0296,
+"rel_3m": 0.0251,
+"rel_prev_3m": 0.0575,
+"flow_3m": "flat"
 },
 {
 "ticker": "XLU",
@@ -112,7 +128,11 @@
 "ret_4w": 0.0181,
 "rel_4w": 0.0744,
 "rel_prev_4w": 0.0844,
-"flow_4w": "flat"
+"flow_4w": "flat",
+"ret_3m": 0.0076,
+"rel_3m": 0.0622,
+"rel_prev_3m": -0.0615,
+"flow_3m": "in"
 },
 {
 "ticker": "XLY",
@@ -135,7 +155,11 @@
 "ret_4w": 0.0234,
 "rel_4w": 0.0797,
 "rel_prev_4w": 0.0486,
-"flow_4w": "in"
+"flow_4w": "in",
+"ret_3m": -0.0065,
+"rel_3m": 0.0481,
+"rel_prev_3m": -0.0336,
+"flow_3m": "in"
 },
 {
 "ticker": "XLB",
@@ -158,7 +182,11 @@
 "ret_4w": -0.0288,
 "rel_4w": 0.0275,
 "rel_prev_4w": 0.0389,
-"flow_4w": "flat"
+"flow_4w": "flat",
+"ret_3m": -0.0644,
+"rel_3m": -0.0098,
+"rel_prev_3m": 0.0317,
+"flow_3m": "flat"
 },
 {
 "ticker": "XLV",
@@ -181,7 +209,11 @@
 "ret_4w": 0.0008,
 "rel_4w": 0.0571,
 "rel_prev_4w": 0.0471,
-"flow_4w": "in"
+"flow_4w": "in",
+"ret_3m": 0.0275,
+"rel_3m": 0.0821,
+"rel_prev_3m": 0.1625,
+"flow_3m": "flat"
 },
 {
 "ticker": "XLRE",
@@ -204,7 +236,11 @@
 "ret_4w": 0.0023,
 "rel_4w": 0.0586,
 "rel_prev_4w": 0.0354,
-"flow_4w": "in"
+"flow_4w": "in",
+"ret_3m": -0.0463,
+"rel_3m": 0.0083,
+"rel_prev_3m": 0.0004,
+"flow_3m": "flat"
 },
 {
 "ticker": "XLF",
@@ -227,7 +263,11 @@
 "ret_4w": -0.0066,
 "rel_4w": 0.0497,
 "rel_prev_4w": 0.0341,
-"flow_4w": "in"
+"flow_4w": "in",
+"ret_3m": -0.0422,
+"rel_3m": 0.0124,
+"rel_prev_3m": 0.1055,
+"flow_3m": "flat"
 },
 {
 "ticker": "XLP",
@@ -250,6 +290,10 @@
 "ret_4w": 0.0275,
 "rel_4w": 0.0838,
 "rel_prev_4w": 0.0693,
-"flow_4w": "in"
+"flow_4w": "in",
+"ret_3m": 0.0515,
+"rel_3m": 0.1061,
+"rel_prev_3m": 0.0187,
+"flow_3m": "in"
 }
 ]
