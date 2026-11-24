@@ -49,8 +49,8 @@
   }
 
   /* money flow */
-  :root { --beat: #2a78d6; --trail: #e34948; }
-  @media (prefers-color-scheme: dark) { :root { --beat: #3987e5; --trail: #e66767; } }
+  :root { --beat: #16a34a; --trail: #e34948; }
+  @media (prefers-color-scheme: dark) { :root { --beat: #22c55e; --trail: #e66767; } }
   .headline { font-size: 17px; line-height: 1.4; margin: 6px 0 16px; font-weight: 500; }
   .headline b.in { color: var(--beat); } .headline b.out { color: var(--trail); }
   h3.ch { font-size: 14px; margin: 0 0 2px; }
@@ -90,9 +90,14 @@
   .row { display: flex; gap: 14px; margin-top: 8px; font-variant-numeric: tabular-nums; }
   .row div { font-size: 12px; color: var(--text-2); }
   .row b { display: block; font-size: 15px; color: var(--text); font-weight: 650; }
+  .bars .grp { grid-column: 1 / -1; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-top: 8px; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+  .mood { display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px; margin: 6px 0 4px; letter-spacing: .03em; }
+  .mood.on { background: color-mix(in srgb, var(--beat) 22%, transparent); }
+  .mood.off { background: color-mix(in srgb, var(--trail) 22%, transparent); }
+  .mood.mixed { background: color-mix(in srgb, var(--warning) 26%, transparent); }
   .rarity { margin-top: 8px; font-size: 12px; color: var(--text-2); }
   .bar { height: 6px; background: var(--grid); border-radius: 3px; margin-top: 4px; overflow: hidden; }
-  .bar span { display: block; height: 100%; background: var(--blue); border-radius: 3px; }
+  .bar span { display: block; height: 100%; background: var(--text-2); border-radius: 3px; }
   .why { font-size: 13px; color: var(--text-2); margin-top: 8px; }
   svg.spark { width: 100%; height: 36px; display: block; margin-top: 8px; }
   .foot { color: var(--muted); font-size: 12px; margin-top: 20px; }
@@ -120,9 +125,20 @@
     <div id="bars" class="bars"></div>
 
     <h3 class="ch" style="margin-top:22px">Week by week · last 12 weeks</h3>
-    <div class="sub">Each square is one week. Blue = beat the S&amp;P 500 that week, red = trailed it. Darker = bigger gap.
-      A row turning from red to blue is money rotating in.</div>
+    <div class="sub">Each square is one week. Green = beat the S&amp;P 500 that week, red = trailed it. Darker = bigger gap.
+      A row turning from red to green is money rotating in.</div>
     <div id="heat" class="heat"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Stocks vs bonds vs cash vs everything else</h2>
+    <div id="mood"></div>
+    <p class="headline" id="safeline" style="margin-top:4px"></p>
+    <h3 class="ch">Return over the last 4 weeks</h3>
+    <div class="sub">Sector rotation only shows money moving between stocks. This shows whether it is leaving stocks for safer places.
+      T-bills stand in for cash and money market funds. Thin line = the 4 weeks before.</div>
+    <div class="flowkey"><span><i class="sw beat"></i>Gained</span><span><i class="sw trail"></i>Lost</span><span><i class="sw ghost"></i>4 weeks before</span></div>
+    <div id="safebars" class="bars"></div>
   </section>
 
   <section class="panel">
@@ -143,7 +159,6 @@
 </main>
 
 <script>
-const QCOLOR = { Leading: "var(--good)", Weakening: "var(--warning)", Lagging: "var(--critical)", Improving: "var(--blue)" };
 const BADGE = {
   "On Sale": ["b-sale", "var(--good)", "▼"], "Pullback": ["b-pull", "var(--warning)", "◆"],
   "Falling Knife": ["b-knife", "var(--critical)", "✕"], "Normal": ["b-norm", "var(--neutral)", "●"]
@@ -171,6 +186,7 @@ function render(d) {
       `<div class="stat"><div class="k">${badge(l)}</div><div class="v">${c[l]}</div><div class="s">sectors</div></div>`).join("")}`;
 
   drawFlows(d);
+  if (d.safe_havens) drawSafe(d.safe_havens);
 
   // cards
   document.getElementById("cards").innerHTML = d.sectors.map(s => `
@@ -207,6 +223,33 @@ function names(list, sectors) {
   if (n.length <= 1) return n.join("");
   if (n.length === 2) return n.join(" and ");
   return n.slice(0, -1).join(", ") + " and " + n.at(-1);
+}
+
+function drawSafe(sh) {
+  const label = { on: "RISK-ON", off: "RISK-OFF", mixed: "MIXED" }[sh.mood];
+  document.getElementById("mood").innerHTML = `<span class="mood ${sh.mood}">${label}</span>`;
+  document.getElementById("safeline").textContent = sh.verdict;
+  const rows = sh.assets;
+  const GROUP = { Stocks: "Stocks", Safe: "Safe havens", Other: "Riskier alternatives" };
+  // scale to the typical move so one wild asset (bitcoin) doesn't flatten the rest; outliers are clipped
+  const mags = rows.flatMap(a => [Math.abs(a.ret_4w), Math.abs(a.ret_prev_4w)]).sort((a, b) => a - b);
+  const max = Math.max(0.01, mags[Math.floor(mags.length * 0.85)] * 1.15);
+  const clip = v => Math.max(-max, Math.min(max, v));
+  const pos = v => 50 + clip(v) / max * 50;
+  let lastG = null;
+  document.getElementById("safebars").innerHTML = rows.map(a => {
+    const head = a.group && a.group !== lastG ? `<div class="grp">${GROUP[a.group] || a.group}</div>` : "";
+    lastG = a.group;
+    const v = a.ret_4w, left = v >= 0 ? 50 : pos(v), width = Math.abs(clip(v)) / max * 50;
+    const [nm, sub] = a.name.includes("(") ? [a.name.split(" (")[0], a.name.split(" (")[1].replace(")", "") + " · " + a.ticker] : [a.name, a.ticker];
+    return `${head}<div class="nm">${esc(nm)}<small>${esc(sub)}</small></div>
+      <div class="track" title="${esc(a.name)}: ${pct(v)} last 4 weeks (before: ${pct(a.ret_prev_4w)})">
+        <div class="zero"></div>
+        <div class="fill ${v >= 0 ? "pos" : "neg"}" style="left:${left}%;width:${width}%"></div>
+        <div class="ghost" style="left:calc(${pos(a.ret_prev_4w)}% - 1px)"></div>
+      </div>
+      <div class="val">${pct(v)}<small>${v > a.ret_prev_4w + 0.002 ? "better than before" : v < a.ret_prev_4w - 0.002 ? "worse than before" : "about the same"}</small></div>`;
+  }).join("");
 }
 
 function drawFlows(d) {

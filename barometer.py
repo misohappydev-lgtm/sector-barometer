@@ -34,6 +34,21 @@ SECTORS = {
     "XLU": "Utilities",
 }
 BENCHMARK = "SPY"
+# Where money goes when it leaves stocks
+SAFE = {   # ticker: (name, group)
+    "SPY": ("US large caps (S&P 500)", "Stocks"),
+    "IWM": ("US small caps (Russell 2000)", "Stocks"),
+    "VEA": ("Developed markets (Europe, Japan)", "Stocks"),
+    "EEM": ("Emerging markets (China, India...)", "Stocks"),
+    "BIL": ("Cash (T-bills, money markets)", "Safe"),
+    "IEF": ("Treasuries (7-10 yr)", "Safe"),
+    "TLT": ("Treasuries (20+ yr)", "Safe"),
+    "GLD": ("Gold", "Safe"),
+    "UUP": ("US dollar", "Safe"),
+    "HYG": ("Junk bonds", "Other"),
+    "DBC": ("Commodities (oil, metals, crops)", "Other"),
+    "IBIT": ("Bitcoin", "Other"),
+}
 OUT = Path(__file__).parent / "docs" / "data.json"
 
 # Label thresholds (drawdown from 52-week high, as a fraction)
@@ -46,7 +61,7 @@ CORRECTION = -0.10
 def fetch_live() -> tuple[pd.DataFrame, dict]:
     import yfinance as yf
 
-    tickers = list(SECTORS) + [BENCHMARK]
+    tickers = list(dict.fromkeys(list(SECTORS) + [BENCHMARK] + list(SAFE)))
     closes = None
     for attempt in range(3):
         df = yf.download(tickers, period="max", auto_adjust=True,
@@ -81,9 +96,17 @@ def fetch_sample() -> tuple[pd.DataFrame, dict]:
     # last-90-day shocks per ticker to exercise each label
     shocks = {"XLK": -0.0022, "XLE": -0.0018, "XLRE": -0.0009,
               "XLY": -0.0006}
-    for t in list(SECTORS) + [BENCHMARK]:
+    for t in dict.fromkeys(list(SECTORS) + [BENCHMARK] + list(SAFE)):
         beta = 1.0 if t == BENCHMARK else rng.uniform(0.6, 1.3)
-        r = beta * market + rng.normal(0, 0.004, n)
+        safe_beta = {"BIL": 0.0, "IEF": -0.1, "TLT": -0.25, "GLD": 0.05, "UUP": -0.1,
+                     "DBC": 0.3, "IBIT": 1.8}
+        if t in safe_beta:
+            beta = safe_beta[t]
+        noise = {"BIL": 0.0002, "IEF": 0.003, "TLT": 0.008, "GLD": 0.008, "UUP": 0.004,
+                 "DBC": 0.01, "IBIT": 0.03}.get(t, 0.004)
+        r = beta * market + rng.normal(0, noise, n)
+        if t == "BIL":
+            r += 0.00016
         # slow sector-specific trends so rotation has something to show
         r += 0.0006 * np.sin(np.arange(n) / rng.uniform(60, 160) + rng.uniform(0, 6))
         s = shocks.get(t, 0.0)
@@ -214,6 +237,39 @@ def rotation(s: pd.Series, spy: pd.Series, weeks: int = 12) -> dict:
     }
 
 
+def safe_havens(closes: pd.DataFrame) -> dict:
+    """4-week returns for stocks vs bonds, cash, gold, and a plain verdict."""
+    def ret(t, n0, n1):
+        x = closes[t].dropna()
+        return float(x.iloc[-1 - n1] / x.iloc[-1 - n0] - 1)
+
+    rows = []
+    for t, (name, group) in SAFE.items():
+        if t not in closes or closes[t].dropna().shape[0] < 45:
+            continue
+        rows.append({"ticker": t, "name": name, "group": group,
+                     "ret_4w": round(ret(t, 20, 0), 4),
+                     "ret_prev_4w": round(ret(t, 40, 20), 4)})
+    r = {x["ticker"]: x["ret_4w"] for x in rows}
+    stocks, cash = r.get("SPY", 0), r.get("BIL", 0)
+    bonds = max(r.get("IEF", -1), r.get("TLT", -1))
+    gold = r.get("GLD", -1)
+    credit = r.get("HYG", 0) - r.get("IEF", 0)   # junk beating Treasuries = appetite for risk
+
+    if stocks > cash and stocks > bonds:
+        verdict, mood = "Risk-on: money is choosing stocks over bonds and cash.", "on"
+    elif stocks < cash and max(bonds, gold, cash) > stocks:
+        best = max([("cash", cash), ("bonds", bonds), ("gold", gold)], key=lambda z: z[1])[0]
+        verdict, mood = f"Risk-off: stocks are trailing cash. Safe money is favoring {best}.", "off"
+    else:
+        verdict, mood = "Mixed: stocks are up, but bonds or gold are doing better.", "mixed"
+    if credit < -0.01:
+        verdict += " Junk bonds are lagging Treasuries, an early stress sign."
+    elif credit > 0.01:
+        verdict += " Junk bonds are beating Treasuries, so credit markets are calm."
+    return {"assets": rows, "verdict": verdict, "mood": mood, "credit_gap": round(credit, 4)}
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--sample", action="store_true")
@@ -243,6 +299,7 @@ def main() -> None:
         "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
         "as_of": closes.index[-1].strftime("%Y-%m-%d"),
         "sample": bool(args.sample),
+        "safe_havens": safe_havens(closes),
         "benchmark": bench,
         "sectors": rows,
         "rotating_in": [r["ticker"] for r in flows_in],
