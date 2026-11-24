@@ -53,42 +53,42 @@
 "ticker": "1y",
 "name": "Past year",
 "score": 0,
-"reason": "Risk-on, S&P 500 +11.9%. Led by Energy (+26.7%) and Staples (+8.6%); lagging Communication (-16.5%) and Utilities (-10.7%)."
+"reason": "Risk-on, S&P 500 +11.9%. Best vs the S&P 500: Energy (+26.7%) and Staples (+8.6%); worst: Communication (-16.5%) and Utilities (-10.7%)."
 },
 {
 "kind": "story",
 "ticker": "6m",
 "name": "Past 6 months",
 "score": 0,
-"reason": "Risk-off, S&P 500 -3.3%. Led by Health Care (+25.1%) and Staples (+12.8%); lagging Tech (-8.8%) and Communication (-6.5%)."
+"reason": "Risk-off, S&P 500 -3.3%. Best vs the S&P 500: Health Care (+25.1%) and Staples (+12.8%); worst: Tech (-8.8%) and Communication (-6.5%)."
 },
 {
 "kind": "story",
 "ticker": "3m",
 "name": "Past 3 months",
 "score": 0,
-"reason": "Risk-off, S&P 500 -5.5%. Led by Staples (+10.6%) and Health Care (+8.2%); lagging Tech (-5.1%) and Industrials (-3.2%)."
+"reason": "Risk-off, S&P 500 -5.5%. Best vs the S&P 500: Staples (+10.6%) and Health Care (+8.2%); worst: Tech (-5.1%) and Industrials (-3.2%)."
 },
 {
 "kind": "story",
 "ticker": "4w",
 "name": "Past 4 weeks",
 "score": 0,
-"reason": "Risk-off, S&P 500 -5.6%. Led by Staples (+8.4%) and Discretionary (+8.0%); lagging Energy (-8.4%) and Tech (-7.2%)."
+"reason": "Risk-off, S&P 500 -5.6%. Best vs the S&P 500: Staples (+8.4%) and Discretionary (+8.0%); worst: Energy (-8.4%) and Tech (-7.2%)."
 },
 {
 "kind": "story",
 "ticker": "1w",
 "name": "This week",
 "score": 0,
-"reason": "Risk-off, S&P 500 -2.4%. Led by Discretionary (+1.4%) and Tech (+0.9%); lagging Energy (-3.6%) and Health Care (-2.1%)."
+"reason": "Risk-off, S&P 500 -2.4%. Best vs the S&P 500: Discretionary (+1.4%) and Tech (+0.9%); worst: Energy (-3.6%) and Health Care (-2.1%)."
 },
 {
 "kind": "story",
 "ticker": "1d",
 "name": "Today",
 "score": 0,
-"reason": "Risk-on, S&P 500 +4.7%. Led by Tech (+4.3%) and Discretionary (-0.7%); lagging Energy (-5.8%) and Staples (-4.8%)."
+"reason": "Risk-on, S&P 500 +4.7%. Best vs the S&P 500: Tech (+4.3%) and Discretionary (-0.7%); worst: Energy (-5.8%) and Staples (-4.8%)."
 },
 {
 "kind": "takeaway",

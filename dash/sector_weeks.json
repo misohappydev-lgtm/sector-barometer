@@ -2265,7 +2265,7 @@
 "name": "Utilities",
 "period": "3m",
 "end": "2024-11-18",
-"rel": 0.0204
+"rel": 0.0205
 },
 {
 "ticker": "XLU",
@@ -2748,7 +2748,7 @@
 "name": "Discretionary",
 "period": "3m",
 "end": "2024-02-20",
-"rel": -0.0378
+"rel": -0.0379
 },
 {
 "ticker": "XLY",
