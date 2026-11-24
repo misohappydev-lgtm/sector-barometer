@@ -242,7 +242,9 @@ def rotation(s: pd.Series, spy: pd.Series, weeks: int = 12) -> dict:
     wk = s.resample("W-FRI").last().dropna()
     sw = spy.resample("W-FRI").last().reindex(wk.index).ffill()
     rel_w = (wk.pct_change() - sw.pct_change()).dropna().iloc[-weeks:]
-    out["weekly"] = [[d.strftime("%Y-%m-%d"), round(float(v), 4)] for d, v in rel_w.items()]
+    # label each week by its last actual trading day (the current week isn't over yet)
+    last_day = s.index.to_series().resample("W-FRI").last()
+    out["weekly"] = [[last_day.loc[d].strftime("%Y-%m-%d"), round(float(v), 4)] for d, v in rel_w.items()]
     return out
 
 
