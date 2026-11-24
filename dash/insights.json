@@ -1,0 +1,51 @@
+[
+{
+"kind": "strong",
+"ticker": "XLP",
+"name": "Staples",
+"score": 92,
+"reason": "Ahead over 4 weeks, 3 months, behind over 1 week; 6-month trend rising (+13.2% vs the market)."
+},
+{
+"kind": "strong",
+"ticker": "XLY",
+"name": "Discretionary",
+"score": 77,
+"reason": "Beat the S&P 500 on all three timeframes (+4.8% over 3 months); 6-month trend rising (+1.6% vs the market); pullback, 6% below its high."
+},
+{
+"kind": "strong",
+"ticker": "XLV",
+"name": "Health Care",
+"score": 75,
+"reason": "Ahead over 4 weeks, 3 months, behind over 1 week; 6-month trend rising (+25.9% vs the market); pullback, 5% below its high."
+},
+{
+"kind": "dip",
+"ticker": "XLU",
+"name": "Utilities",
+"score": 70,
+"reason": "Beat the S&P 500 on all three timeframes (+6.2% over 3 months); 6-month trend rising (+0.2% vs the market); pullback, 7% below its high."
+},
+{
+"kind": "dip",
+"ticker": "XLF",
+"name": "Financials",
+"score": 55,
+"reason": "Ahead over 4 weeks, 3 months, behind over 1 week; 6-month trend rising (+11.8% vs the market); pullback, 6% below its high."
+},
+{
+"kind": "turning",
+"ticker": "XLI",
+"name": "Industrials",
+"score": 33,
+"reason": "Ahead over 1 week, 4 weeks, behind over 3 months; 6-month trend falling (-3.1% vs the market); on sale, 13% below its high."
+},
+{
+"kind": "avoid",
+"ticker": "XLK",
+"name": "Tech",
+"score": 24,
+"reason": "Ahead over 1 week, behind over 4 weeks, 3 months; 6-month trend falling (-9.1% vs the market); on sale, 20% below its high."
+}
+]
