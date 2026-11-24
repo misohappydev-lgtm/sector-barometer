@@ -371,6 +371,86 @@ def _join(names: list[str]) -> str:
     return ", ".join(names[:-1]) + " and " + names[-1]
 
 
+def _p(v):
+    return f"{v * 100:+.1f}%"
+
+
+def build_insights(rows: list[dict], summary: dict, sh: dict) -> tuple[list[dict], dict]:
+    """Rule-based read of where money is going, from all timeframes together.
+
+    Score = rank-blend of how much each sector beat the S&P 500 over 1 week (15%),
+    4 weeks (25%), 3 months (35%) and the 6-month trend line (25%). Then:
+      - Strongest: top-scoring sectors that beat the market on 4 weeks and 3 months
+      - Dip in a strong sector: On Sale / Pullback but 3-month trend still positive
+      - Turning up: beating the market on 1 and 4 weeks, still behind on 3 months
+      - Avoid: bottom scorers that trail on 4 weeks and 3 months, or Falling Knife
+    """
+    import pandas as pd
+    df = pd.DataFrame(rows).set_index("ticker")
+    w = {"rel_1w": 0.15, "rel_4w": 0.25, "rel_3m": 0.35, "rs_6m": 0.25}
+    score = sum(df[c].rank(pct=True) * wt for c, wt in w.items())
+    df["score"] = (score * 100).round(0)
+
+    def reason(r):
+        bits = []
+        beat = [k for k, lab in (("rel_1w", "1 week"), ("rel_4w", "4 weeks"), ("rel_3m", "3 months")) if r[k] > 0]
+        lag = [lab for k, lab in (("rel_1w", "1 week"), ("rel_4w", "4 weeks"), ("rel_3m", "3 months")) if r[k] <= 0]
+        if len(beat) == 3:
+            bits.append(f"beat the S&P 500 on all three timeframes ({_p(r['rel_3m'])} over 3 months)")
+        elif not beat:
+            bits.append(f"trailed the S&P 500 on all three timeframes ({_p(r['rel_3m'])} over 3 months)")
+        else:
+            bits.append(f"ahead over {', '.join(dict(rel_1w='1 week', rel_4w='4 weeks', rel_3m='3 months')[k] for k in beat)}, behind over {', '.join(lag)}")
+        if r["rs_6m"] is not None:
+            bits.append(f"6-month trend {'rising' if r['rs_6m'] > 0 else 'falling'} ({_p(r['rs_6m'])} vs the market)")
+        if r["label"] != "Normal":
+            bits.append(f"{r['label'].lower()}, {abs(r['dd52']) * 100:.0f}% below its high")
+        s = "; ".join(bits)
+        return s[0].upper() + s[1:] + "."
+
+    out = []
+    used = set()
+    ranked = df.sort_values("score", ascending=False)
+
+    strong = ranked[(ranked.rel_4w > 0) & (ranked.rel_3m > 0) & (ranked.label != "Falling Knife")].head(3)
+    for t, r in strong.iterrows():
+        out.append({"kind": "strong", "ticker": t, "name": r["name"], "score": int(r.score), "reason": reason(r)})
+        used.add(t)
+
+    dips = ranked[ranked.label.isin(["On Sale", "Pullback"]) & (ranked.rel_3m > 0) & (ranked.rs_6m > 0) & ~ranked.index.isin(used)].head(2)
+    for t, r in dips.iterrows():
+        out.append({"kind": "dip", "ticker": t, "name": r["name"], "score": int(r.score), "reason": reason(r)})
+        used.add(t)
+
+    turning = ranked[(ranked.rel_1w > 0) & (ranked.rel_4w > 0) & (ranked.rel_3m <= 0) & ~ranked.index.isin(used)].head(2)
+    for t, r in turning.iterrows():
+        out.append({"kind": "turning", "ticker": t, "name": r["name"], "score": int(r.score), "reason": reason(r)})
+        used.add(t)
+
+    avoid = ranked[((ranked.rel_4w <= 0) & (ranked.rel_3m <= 0)) | (ranked.label == "Falling Knife")]
+    avoid = avoid[~avoid.index.isin(used)].sort_values("score").head(3)
+    for t, r in avoid.iterrows():
+        out.append({"kind": "avoid", "ticker": t, "name": r["name"], "score": int(r.score), "reason": reason(r)})
+
+    # Market regime in one line
+    m4, m3 = summary.get("mood_4w"), summary.get("mood_3m")
+    defensive = {"XLV", "XLP", "XLU", "XLRE"}
+    lead = [t for t in strong.index]
+    lead_def = sum(t in defensive for t in lead)
+    if m4 == "off" and m3 == "off":
+        mood = "Risk-off: over both 4 weeks and 3 months, money has favored bonds and cash over stocks."
+    elif m4 == "on" and m3 == "on":
+        mood = "Risk-on: over both 4 weeks and 3 months, money has favored stocks over bonds and cash."
+    else:
+        mood = "Mixed: the 4-week and 3-month readings disagree, so the market is between moods."
+    if lead:
+        mood += (" Leadership is defensive (" if lead_def >= 2 else " Leadership is growth/cyclical (" if lead_def == 0 else " Leadership is mixed (") \
+            + ", ".join(df.loc[t, "name"] for t in lead) + ")."
+    if summary.get("spy_label") in ("On Sale", "Pullback"):
+        mood += f" The S&P 500 is {abs(summary['spy_dd52']) * 100:.0f}% below its high ({summary['spy_label'].lower()})."
+    return out, {"insight_mood": mood}
+
+
 def write_dash(out: dict, mmf: list[dict]) -> None:
     DASH.mkdir(exist_ok=True)
     secs = out["sectors"]
@@ -419,6 +499,7 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
             row[f"rel_{key}"] = r["rotation"][f"rel_{key}"]
             row[f"rel_prev_{key}"] = r["rotation"][f"rel_prev_{key}"]
             row[f"flow_{key}"] = r["rotation"][f"flow_{key}"]
+        row["rs_6m"] = round(r["rotation"]["rs"][-1][1] / 100 - 1, 4) if r["rotation"]["rs"] else None
         sector_rows.append(row)
         for d, v in r["rotation"]["rs"]:
             rs_rows.append({"ticker": r["ticker"], "name": SHORT[r["ticker"]], "date": d, "rs": v})
@@ -426,14 +507,18 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
             for end, v in blocks:
                 week_rows.append({"ticker": r["ticker"], "name": SHORT[r["ticker"]], "period": key, "end": end, "rel": v})
 
+    insights, regime = build_insights(sector_rows, summary, sh)
+    summary.update(regime)
+
     def dump(name, rows):
         (DASH / name).write_text(json.dumps(rows, indent=0))
-    dump("summary.json", [summary])
     dump("sectors.json", sector_rows)
     dump("sector_weeks.json", week_rows)
     dump("assets.json", sh["assets"])
     dump("mmf.json", mmf)
     dump("rs.json", rs_rows)
+    dump("insights.json", insights)
+    dump("summary.json", [summary])
     print(f"Wrote dashboard files to {DASH}")
 
 
