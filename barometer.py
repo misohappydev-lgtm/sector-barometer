@@ -213,61 +213,202 @@ def analyze(s: pd.Series, spy: pd.Series) -> dict:
     }
 
 
+PERIODS = {"1d": 1, "1w": 5, "4w": 20}          # trading days
+FLOW_MIN = {"1d": 0.002, "1w": 0.004, "4w": 0.005}  # gap vs SPY needed to call a flow
+PERIOD_WORDS = {"1d": "today", "1w": "this week", "4w": "over the last 4 weeks"}
+
+
+def _ret(x: pd.Series, n0: int, n1: int) -> float:
+    """Return from n0 trading days ago to n1 trading days ago."""
+    x = x.dropna()
+    return float(x.iloc[-1 - n1] / x.iloc[-1 - n0] - 1)
+
+
 def rotation(s: pd.Series, spy: pd.Series, weeks: int = 12) -> dict:
-    """How the sector did vs SPY: last 4 weeks, the 4 weeks before, and week by week."""
+    """Sector vs SPY over 1 day, 1 week, 4 weeks (and the same span before), plus weekly history."""
+    s = s.dropna()
+    spy_a = spy.reindex(s.index).ffill()
+    out = {}
+    for key, n in PERIODS.items():
+        now = _ret(s, n, 0) - _ret(spy_a, n, 0)
+        before = _ret(s, 2 * n, n) - _ret(spy_a, 2 * n, n)
+        thr = FLOW_MIN[key]
+        flow = "in" if (now > thr and now > before) else "out" if (now < -thr and now < before) else "flat"
+        out[f"rel_{key}"] = round(now, 4)
+        out[f"rel_prev_{key}"] = round(before, 4)
+        out[f"flow_{key}"] = flow
+    out["flow"] = out["flow_4w"]
+
     wk = s.resample("W-FRI").last().dropna()
     sw = spy.resample("W-FRI").last().reindex(wk.index).ffill()
     rel_w = (wk.pct_change() - sw.pct_change()).dropna().iloc[-weeks:]
+    out["weekly"] = [[d.strftime("%Y-%m-%d"), round(float(v), 4)] for d, v in rel_w.items()]
+    return out
 
-    def rel(n0, n1):  # sector return minus SPY return between n0 and n1 weeks ago
-        return float((wk.iloc[-1 - n1] / wk.iloc[-1 - n0] - 1) - (sw.iloc[-1 - n1] / sw.iloc[-1 - n0] - 1))
 
-    now, before = rel(4, 0), rel(8, 4)
-    if now > 0.005 and now > before:
-        flow = "in"
-    elif now < -0.005 and now < before:
-        flow = "out"
+def _verdict(r: dict, period: str) -> tuple[str, str]:
+    words = PERIOD_WORDS[period]
+    stocks, cash = r.get("SPY", 0), r.get("BIL", 0)
+    bonds = max(r.get("IEF", -1), r.get("TLT", -1))
+    gold = r.get("GLD", -1)
+    credit = r.get("HYG", 0) - r.get("IEF", 0)
+    if stocks > cash and stocks > bonds:
+        v, mood = f"Risk-on {words}: money is choosing stocks over bonds and cash.", "on"
+    elif stocks < cash and max(bonds, gold, cash) > stocks:
+        best = max([("cash", cash), ("bonds", bonds), ("gold", gold)], key=lambda z: z[1])[0]
+        v, mood = f"Risk-off {words}: stocks are trailing cash, and safe money is favoring {best}.", "off"
     else:
-        flow = "flat"
-    return {
-        "rel_4w": round(now, 4),
-        "rel_prev_4w": round(before, 4),
-        "flow": flow,
-        "weekly": [[d.strftime("%Y-%m-%d"), round(float(v), 4)] for d, v in rel_w.items()],
-    }
+        v, mood = f"Mixed {words}: stocks are up, but bonds or gold are doing better.", "mixed"
+    lim = {"1d": 0.003, "1w": 0.006, "4w": 0.01}[period]
+    if credit < -lim:
+        v += " Junk bonds are lagging Treasuries, an early stress sign."
+    elif credit > lim:
+        v += " Junk bonds are beating Treasuries, so credit markets are calm."
+    return v, mood
 
 
 def safe_havens(closes: pd.DataFrame) -> dict:
-    """4-week returns for stocks vs bonds, cash, gold, and a plain verdict."""
-    def ret(t, n0, n1):
-        x = closes[t].dropna()
-        return float(x.iloc[-1 - n1] / x.iloc[-1 - n0] - 1)
-
+    """Returns over 1d / 1w / 4w for stocks, bonds, cash, gold, etc., with a verdict per period."""
     rows = []
     for t, (name, group) in SAFE.items():
         if t not in closes or closes[t].dropna().shape[0] < 45:
             continue
-        rows.append({"ticker": t, "name": name, "group": group,
-                     "ret_4w": round(ret(t, 20, 0), 4),
-                     "ret_prev_4w": round(ret(t, 40, 20), 4)})
-    r = {x["ticker"]: x["ret_4w"] for x in rows}
-    stocks, cash = r.get("SPY", 0), r.get("BIL", 0)
-    bonds = max(r.get("IEF", -1), r.get("TLT", -1))
-    gold = r.get("GLD", -1)
-    credit = r.get("HYG", 0) - r.get("IEF", 0)   # junk beating Treasuries = appetite for risk
+        row = {"ticker": t, "name": name, "group": group}
+        for key, n in PERIODS.items():
+            row[f"ret_{key}"] = round(_ret(closes[t], n, 0), 4)
+            row[f"ret_prev_{key}"] = round(_ret(closes[t], 2 * n, n), 4)
+        rows.append(row)
+    out = {"assets": rows}
+    for key in PERIODS:
+        v, mood = _verdict({x["ticker"]: x[f"ret_{key}"] for x in rows}, key)
+        out[f"verdict_{key}"], out[f"mood_{key}"] = v, mood
+    out["verdict"], out["mood"] = out["verdict_4w"], out["mood_4w"]
+    return out
 
-    if stocks > cash and stocks > bonds:
-        verdict, mood = "Risk-on: money is choosing stocks over bonds and cash.", "on"
-    elif stocks < cash and max(bonds, gold, cash) > stocks:
-        best = max([("cash", cash), ("bonds", bonds), ("gold", gold)], key=lambda z: z[1])[0]
-        verdict, mood = f"Risk-off: stocks are trailing cash. Safe money is favoring {best}.", "off"
-    else:
-        verdict, mood = "Mixed: stocks are up, but bonds or gold are doing better.", "mixed"
-    if credit < -0.01:
-        verdict += " Junk bonds are lagging Treasuries, an early stress sign."
-    elif credit > 0.01:
-        verdict += " Junk bonds are beating Treasuries, so credit markets are calm."
-    return {"assets": rows, "verdict": verdict, "mood": mood, "credit_gap": round(credit, 4)}
+
+# ---------------------------------------------------------------- money market funds (ICI, weekly)
+
+MMF_HISTORY = Path(__file__).parent / "dash" / "mmf_history.json"
+ICI_URL = "https://www.ici.org/research/stats/mmf"
+
+
+def fetch_mmf() -> list[dict]:
+    """Scrape ICI's latest weekly release and add it to a running history file.
+
+    ICI publishes total money market fund assets every Thursday for the week
+    ended Wednesday. The weekly change in assets is mostly new money flowing in
+    or out, so it is the best free read on money moving to cash.
+    """
+    import re
+    import urllib.request
+
+    hist = json.loads(MMF_HISTORY.read_text()) if MMF_HISTORY.exists() else []
+    try:
+        req = urllib.request.Request(ICI_URL, headers={"User-Agent": "Mozilla/5.0 (sector-barometer)"})
+        html = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
+        text = re.sub(r"<[^>]+>", " ", html)
+        text = re.sub(r"\s+", " ", text)
+        m = re.search(r"Total money market fund assets\W*\d?\s*(increased|decreased) by \$([\d,.]+) (billion|million) "
+                      r"to \$([\d,.]+) trillion for the week ended Wednesday, (\w+ \d{1,2})", text)
+        if not m:
+            print("ICI: release text not found; keeping history as is")
+            return hist
+        sign = 1 if m.group(1) == "increased" else -1
+        chg = float(m.group(2).replace(",", "")) * (1 if m.group(3) == "billion" else 0.001) * sign
+        total = float(m.group(4).replace(",", "")) * 1000
+        today = datetime.now(timezone.utc).date()
+        week_end = None
+        for yr in (today.year, today.year - 1):
+            try:
+                d = datetime.strptime(f"{m.group(5)} {yr}", "%B %d %Y").date()
+            except ValueError:
+                continue
+            if d <= today:
+                week_end = d.isoformat()
+                break
+        if not week_end:
+            return hist
+        hist = [h for h in hist if h["week_end"] != week_end]
+        hist.append({"week_end": week_end, "total_bn": round(total, 1), "change_bn": round(chg, 2)})
+        hist.sort(key=lambda h: h["week_end"])
+        hist = hist[-104:]
+        MMF_HISTORY.parent.mkdir(parents=True, exist_ok=True)
+        MMF_HISTORY.write_text(json.dumps(hist, indent=1))
+        print(f"ICI: week ended {week_end}: {chg:+.1f}B to ${total/1000:.2f}T")
+    except Exception as e:   # never let this break the daily run
+        print(f"ICI fetch failed: {e}")
+    return hist
+
+
+# ---------------------------------------------------------------- dashboard files
+
+DASH = Path(__file__).parent / "dash"
+SHORT = {"XLK": "Tech", "XLC": "Communication", "XLY": "Discretionary", "XLF": "Financials",
+         "XLV": "Health Care", "XLI": "Industrials", "XLE": "Energy", "XLB": "Materials",
+         "XLP": "Staples", "XLRE": "Real Estate", "XLU": "Utilities"}
+
+
+def _join(names: list[str]) -> str:
+    if len(names) <= 1:
+        return "".join(names)
+    return ", ".join(names[:-1]) + " and " + names[-1]
+
+
+def write_dash(out: dict, mmf: list[dict]) -> None:
+    DASH.mkdir(exist_ok=True)
+    secs = out["sectors"]
+    sh = out["safe_havens"]
+
+    summary = {"as_of": out["as_of"], "sample": out["sample"],
+               "spy_dd52": out["benchmark"]["dd52"], "spy_label": out["benchmark"]["label"],
+               "on_sale": out["counts"]["On Sale"], "falling_knife": out["counts"]["Falling Knife"],
+               "pullback": out["counts"]["Pullback"], "normal": out["counts"]["Normal"]}
+    for key in PERIODS:
+        ins = sorted([r for r in secs if r["rotation"][f"flow_{key}"] == "in"], key=lambda r: -r["rotation"][f"rel_{key}"])
+        outs = sorted([r for r in secs if r["rotation"][f"flow_{key}"] == "out"], key=lambda r: r["rotation"][f"rel_{key}"])
+        i = _join([SHORT[r["ticker"]] for r in ins[:3]])
+        o = _join([SHORT[r["ticker"]] for r in outs[:3]])
+        w = PERIOD_WORDS[key]
+        if i and o:
+            h = f"Money is moving into {i} and out of {o} {w}."
+        elif i:
+            h = f"Money is moving into {i} {w}. Nothing is clearly losing out."
+        elif o:
+            h = f"Money is moving out of {o} {w}. Nothing is clearly gaining."
+        else:
+            h = f"No clear rotation {w}. Sectors are moving roughly with the market."
+        summary[f"rotation_{key}"] = h
+        summary[f"verdict_{key}"] = sh[f"verdict_{key}"]
+        summary[f"mood_{key}"] = sh[f"mood_{key}"]
+    if mmf:
+        last = mmf[-1]
+        summary["mmf_week_end"] = last["week_end"]
+        summary["mmf_total_bn"] = last["total_bn"]
+        summary["mmf_change_1w_bn"] = last["change_bn"]
+        summary["mmf_change_4w_bn"] = round(sum(h["change_bn"] for h in mmf[-4:]), 1) if len(mmf) >= 4 else None
+        summary["mmf_weeks"] = len(mmf)
+
+    sector_rows, week_rows = [], []
+    for r in secs:
+        row = {"ticker": r["ticker"], "name": SHORT[r["ticker"]], "label": r["label"], "why": r["why"],
+               "dd52": r["dd52"], "rarity": r["rarity"], "since": r["history_start"][:4],
+               "chg_1m": r["chg_1m"], "rank": r["rank"]}
+        for key in PERIODS:
+            row[f"rel_{key}"] = r["rotation"][f"rel_{key}"]
+            row[f"rel_prev_{key}"] = r["rotation"][f"rel_prev_{key}"]
+            row[f"flow_{key}"] = r["rotation"][f"flow_{key}"]
+        sector_rows.append(row)
+        for wk, v in r["rotation"]["weekly"]:
+            week_rows.append({"ticker": r["ticker"], "name": SHORT[r["ticker"]], "week": wk, "rel": v})
+
+    def dump(name, rows):
+        (DASH / name).write_text(json.dumps(rows, indent=0))
+    dump("summary.json", [summary])
+    dump("sectors.json", sector_rows)
+    dump("sector_weeks.json", week_rows)
+    dump("assets.json", sh["assets"])
+    dump("mmf.json", mmf)
+    print(f"Wrote dashboard files to {DASH}")
 
 
 def main() -> None:
@@ -287,6 +428,7 @@ def main() -> None:
     bench = analyze(spy, spy)
     bench.update(ticker=BENCHMARK, name="S&P 500", pe=pe.get(BENCHMARK))
 
+    mmf = [] if args.sample else fetch_mmf()
     flows_in = sorted([r for r in rows if r["rotation"]["flow"] == "in"],
                       key=lambda r: -r["rotation"]["rel_4w"])
     flows_out = sorted([r for r in rows if r["rotation"]["flow"] == "out"],
@@ -309,6 +451,7 @@ def main() -> None:
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1))
+    write_dash(out, mmf)
     print(f"Wrote {OUT} ({out['as_of']})")
     for r in rows:
         print(f"{r['rank']:>2} {r['ticker']:<5} {r['label']:<14} "
