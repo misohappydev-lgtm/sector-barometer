@@ -444,7 +444,7 @@ def build_insights(rows: list[dict], summary: dict, sh: dict) -> tuple[list[dict
     else:
         mood = "Mixed: the 4-week and 3-month readings disagree, so the market is between moods."
     if lead:
-        mood += (" Leadership is defensive (" if lead_def >= 2 else " Leadership is growth/cyclical (" if lead_def == 0 else " Leadership is mixed (") \
+        mood += ({3: " Leadership is defensive (", 2: " Leadership is mostly defensive (", 1: " Leadership is mostly growth/cyclical ("}.get(lead_def, " Leadership is growth/cyclical (")) \
             + ", ".join(df.loc[t, "name"] for t in lead) + ")."
     if summary.get("spy_label") in ("On Sale", "Pullback"):
         mood += f" The S&P 500 is {abs(summary['spy_dd52']) * 100:.0f}% below its high ({summary['spy_label'].lower()})."
