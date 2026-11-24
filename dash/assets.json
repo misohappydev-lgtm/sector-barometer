@@ -12,7 +12,9 @@
 "ret_3m": -0.0546,
 "ret_prev_3m": 0.023,
 "ret_6m": -0.0328,
-"ret_prev_6m": 0.1568
+"ret_prev_6m": 0.1568,
+"ret_1y": 0.1188,
+"ret_prev_1y": 0.123
 },
 {
 "ticker": "IWM",
@@ -27,7 +29,9 @@
 "ret_3m": -0.1096,
 "ret_prev_3m": 0.0325,
 "ret_6m": -0.0807,
-"ret_prev_6m": 0.2745
+"ret_prev_6m": 0.2745,
+"ret_1y": 0.1717,
+"ret_prev_1y": 0.0117
 },
 {
 "ticker": "VEA",
@@ -42,7 +46,9 @@
 "ret_3m": -0.1091,
 "ret_prev_3m": 0.0334,
 "ret_6m": -0.0793,
-"ret_prev_6m": 0.2414
+"ret_prev_6m": 0.2414,
+"ret_1y": 0.143,
+"ret_prev_1y": 0.2323
 },
 {
 "ticker": "EEM",
@@ -57,7 +63,9 @@
 "ret_3m": -0.1401,
 "ret_prev_3m": -0.0117,
 "ret_6m": -0.1501,
-"ret_prev_6m": 0.3063
+"ret_prev_6m": 0.3063,
+"ret_1y": 0.1102,
+"ret_prev_1y": 0.2553
 },
 {
 "ticker": "BIL",
@@ -72,7 +80,9 @@
 "ret_3m": 0.0091,
 "ret_prev_3m": 0.009,
 "ret_6m": 0.0182,
-"ret_prev_6m": 0.0184
+"ret_prev_6m": 0.0184,
+"ret_1y": 0.0369,
+"ret_prev_1y": 0.0429
 },
 {
 "ticker": "IEF",
@@ -87,7 +97,9 @@
 "ret_3m": -0.0097,
 "ret_prev_3m": 0.0019,
 "ret_6m": -0.0079,
-"ret_prev_6m": -0.0081
+"ret_prev_6m": -0.0081,
+"ret_1y": -0.0159,
+"ret_prev_1y": 0.0759
 },
 {
 "ticker": "TLT",
@@ -102,7 +114,9 @@
 "ret_3m": -0.0095,
 "ret_prev_3m": -0.0077,
 "ret_6m": -0.0171,
-"ret_prev_6m": -0.0248
+"ret_prev_6m": -0.0248,
+"ret_1y": -0.0415,
+"ret_prev_1y": 0.0327
 },
 {
 "ticker": "GLD",
@@ -117,7 +131,9 @@
 "ret_3m": -0.222,
 "ret_prev_3m": 0.034,
 "ret_6m": -0.1956,
-"ret_prev_6m": 0.1044
+"ret_prev_6m": 0.1044,
+"ret_1y": -0.1116,
+"ret_prev_1y": 0.5548
 },
 {
 "ticker": "UUP",
@@ -132,7 +148,9 @@
 "ret_3m": 0.0659,
 "ret_prev_3m": 0.0068,
 "ret_6m": 0.0732,
-"ret_prev_6m": 0.0101
+"ret_prev_6m": 0.0101,
+"ret_1y": 0.084,
+"ret_prev_1y": -0.0079
 },
 {
 "ticker": "HYG",
@@ -147,7 +165,9 @@
 "ret_3m": -0.028,
 "ret_prev_3m": 0.0114,
 "ret_6m": -0.0169,
-"ret_prev_6m": 0.0307
+"ret_prev_6m": 0.0307,
+"ret_1y": 0.0133,
+"ret_prev_1y": 0.0692
 },
 {
 "ticker": "DBC",
@@ -162,7 +182,9 @@
 "ret_3m": -0.0434,
 "ret_prev_3m": 0.0133,
 "ret_6m": -0.0306,
-"ret_prev_6m": 0.3686
+"ret_prev_6m": 0.3686,
+"ret_1y": 0.3267,
+"ret_prev_1y": 0.0704
 },
 {
 "ticker": "IBIT",
@@ -177,6 +199,8 @@
 "ret_3m": -0.2258,
 "ret_prev_3m": 0.0402,
 "ret_6m": -0.1947,
-"ret_prev_6m": -0.1219
+"ret_prev_6m": -0.1219,
+"ret_1y": -0.2929,
+"ret_prev_1y": -0.0608
 }
 ]
