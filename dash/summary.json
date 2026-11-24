@@ -16,6 +16,11 @@
 "mood_1w": "off",
 "rotation_4w": "Money is moving into Staples, Discretionary and Real Estate and out of Energy and Tech over the last 4 weeks.",
 "verdict_4w": "Risk-off over the last 4 weeks: stocks are trailing cash, and safe money is favoring bonds. Junk bonds are lagging Treasuries, an early stress sign.",
-"mood_4w": "off"
+"mood_4w": "off",
+"mmf_week_end": "2026-11-18",
+"mmf_total_bn": 7976.4,
+"mmf_change_1w_bn": -3.58,
+"mmf_change_4w_bn": null,
+"mmf_weeks": 2
 }
 ]

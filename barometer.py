@@ -385,7 +385,8 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
         summary["mmf_week_end"] = last["week_end"]
         summary["mmf_total_bn"] = last["total_bn"]
         summary["mmf_change_1w_bn"] = last["change_bn"]
-        summary["mmf_change_4w_bn"] = round(sum(h["change_bn"] for h in mmf[-4:]), 1) if len(mmf) >= 4 else None
+        known = [h for h in mmf if h.get("total_bn") is not None]
+        summary["mmf_change_4w_bn"] = round(known[-1]["total_bn"] - known[-5]["total_bn"], 1) if len(known) >= 5 else None
         summary["mmf_weeks"] = len(mmf)
 
     sector_rows, week_rows = [], []
