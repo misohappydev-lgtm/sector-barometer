@@ -297,8 +297,15 @@ def safe_havens(closes: pd.DataFrame) -> dict:
         rows.append(row)
     out = {"assets": rows}
     for key in PERIODS:
-        v, mood = _verdict({x["ticker"]: x[f"ret_{key}"] for x in rows}, key)
+        r = {x["ticker"]: x[f"ret_{key}"] for x in rows}
+        v, mood = _verdict(r, key)
         out[f"verdict_{key}"], out[f"mood_{key}"] = v, mood
+        # Risk appetite: stocks minus the best safe haven (cash, Treasuries, gold) over the period
+        safe = [r[t] for t in ("BIL", "IEF", "TLT", "GLD") if t in r]
+        if "SPY" in r and safe:
+            best = max(("BIL", "IEF", "TLT", "GLD"), key=lambda t: r.get(t, -9))
+            out[f"risk_gap_{key}"] = round(r["SPY"] - r[best], 4)
+            out[f"risk_best_{key}"] = SAFE[best][0].split(" (")[0]
     out["verdict"], out["mood"] = out["verdict_4w"], out["mood_4w"]
     return out
 
@@ -531,6 +538,8 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
         summary[f"rotation_{key}"] = h
         summary[f"verdict_{key}"] = sh[f"verdict_{key}"]
         summary[f"mood_{key}"] = sh[f"mood_{key}"]
+        summary[f"risk_gap_{key}"] = sh.get(f"risk_gap_{key}")
+        summary[f"risk_best_{key}"] = sh.get(f"risk_best_{key}")
     if mmf:
         last = mmf[-1]
         summary["mmf_week_end"] = last["week_end"]
