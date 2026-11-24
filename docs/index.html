@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sector Dip Barometer</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f6f5f2; --surface: #fcfcfb; --line: #e4e2dc; --grid: #ecebe6;
+    --text: #0b0b0b; --text-2: #52514e; --muted: #85837d;
+    --good: #0ca30c; --warning: #fab219; --critical: #d03b3b; --blue: #2a78d6;
+    --neutral: #a8a69f;
+    --q-lead: rgba(12,163,12,.07); --q-weak: rgba(250,178,25,.10);
+    --q-lag: rgba(208,59,59,.07); --q-imp: rgba(42,120,214,.07);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #121211; --surface: #1a1a19; --line: #2e2e2b; --grid: #262624;
+      --text: #f0efec; --text-2: #c3c2b7; --muted: #8e8d86;
+      --blue: #3987e5; --neutral: #6b6a64;
+      --q-lead: rgba(12,163,12,.12); --q-weak: rgba(250,178,25,.10);
+      --q-lag: rgba(208,59,59,.12); --q-imp: rgba(57,135,229,.12);
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 960px; margin: 0 auto; padding: 20px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 2px; letter-spacing: -.01em; }
+  h2 { font-size: 16px; margin: 0 0 4px; }
+  .sub { color: var(--text-2); font-size: 13px; }
+  .banner { background: var(--warning); color: #241a00; padding: 8px 12px;
+    border-radius: 8px; font-size: 13px; margin: 12px 0; font-weight: 600; }
+  .panel { background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; padding: 16px; margin-top: 16px; }
+  .panel > .sub { margin-bottom: 12px; }
+
+  /* summary */
+  .summary { display: grid; grid-template-columns: 1.4fr repeat(4, 1fr); gap: 8px; margin-top: 16px; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .stat .k { font-size: 12px; color: var(--text-2); }
+  .stat .v { font-size: 22px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .stat .s { font-size: 12px; color: var(--muted); }
+  @media (max-width: 640px) {
+    .summary { grid-template-columns: repeat(2, 1fr); }
+    .summary .stat:first-child { grid-column: 1 / -1; }
+  }
+
+  /* money flow */
+  :root { --beat: #2a78d6; --trail: #e34948; }
+  @media (prefers-color-scheme: dark) { :root { --beat: #3987e5; --trail: #e66767; } }
+  .headline { font-size: 17px; line-height: 1.4; margin: 6px 0 16px; font-weight: 500; }
+  .headline b.in { color: var(--beat); } .headline b.out { color: var(--trail); }
+  h3.ch { font-size: 14px; margin: 0 0 2px; }
+  .flowkey { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12px; color: var(--text-2); margin: 8px 0 10px; }
+  .sw { display: inline-block; width: 12px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+  .sw.beat { background: var(--beat); } .sw.trail { background: var(--trail); }
+  .sw.ghost { width: 2px; height: 12px; background: var(--text); vertical-align: -2px; margin: 0 8px 0 5px; }
+  .bars { display: grid; grid-template-columns: max-content minmax(0, 1fr) max-content; gap: 6px 10px; align-items: center; }
+  .bars .nm { font-size: 13px; line-height: 1.2; }
+  .bars .nm small { color: var(--muted); font-size: 11px; display: block; }
+  .track { position: relative; height: 22px; }
+  .track .zero { position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--text-2); opacity: .5; }
+  .track .fill { position: absolute; top: 3px; height: 16px; border-radius: 4px; }
+  .track .fill.pos { background: var(--beat); border-top-left-radius: 0; border-bottom-left-radius: 0; }
+  .track .fill.neg { background: var(--trail); border-top-right-radius: 0; border-bottom-right-radius: 0; }
+  .track .ghost { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--text); border-radius: 1px; }
+  .bars .val { font-size: 13px; font-weight: 650; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  .bars .val small { display: block; font-size: 11px; font-weight: 500; color: var(--text-2); }
+  .heat { display: grid; gap: 3px; margin-top: 10px; font-size: 12px; }
+  .heat .hn { padding-right: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); align-self: center; }
+  .heat .c { height: 22px; border-radius: 3px; }
+  .heat .hd { font-size: 10px; color: var(--muted); text-align: left; white-space: nowrap; overflow: visible; }
+
+  /* cards */
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+  .card { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+  .card .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .card .tkr { font-weight: 700; font-size: 16px; }
+  .card .nm { color: var(--text-2); font-size: 12px; }
+  .badge { font-size: 12px; font-weight: 650; padding: 2px 8px; border-radius: 999px;
+    display: inline-flex; gap: 4px; align-items: center; white-space: nowrap; }
+  .b-sale { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--text); }
+  .b-pull { background: color-mix(in srgb, var(--warning) 24%, transparent); color: var(--text); }
+  .b-knife { background: color-mix(in srgb, var(--critical) 18%, transparent); color: var(--text); }
+  .b-norm { background: color-mix(in srgb, var(--neutral) 22%, transparent); color: var(--text); }
+  .badge .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .row { display: flex; gap: 14px; margin-top: 8px; font-variant-numeric: tabular-nums; }
+  .row div { font-size: 12px; color: var(--text-2); }
+  .row b { display: block; font-size: 15px; color: var(--text); font-weight: 650; }
+  .rarity { margin-top: 8px; font-size: 12px; color: var(--text-2); }
+  .bar { height: 6px; background: var(--grid); border-radius: 3px; margin-top: 4px; overflow: hidden; }
+  .bar span { display: block; height: 100%; background: var(--blue); border-radius: 3px; }
+  .why { font-size: 13px; color: var(--text-2); margin-top: 8px; }
+  svg.spark { width: 100%; height: 36px; display: block; margin-top: 8px; }
+  .foot { color: var(--muted); font-size: 12px; margin-top: 20px; }
+  details summary { cursor: pointer; color: var(--text-2); font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: right; padding: 5px 6px; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child { text-align: left; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sector Dip Barometer</h1>
+  <div class="sub" id="asof">Loading…</div>
+  <div id="banner"></div>
+
+  <div class="summary" id="summary"></div>
+
+  <section class="panel">
+    <h2>Where the money is moving</h2>
+    <p class="headline" id="headline"></p>
+
+    <h3 class="ch">Beating or trailing the S&amp;P 500 · last 4 weeks</h3>
+    <div class="sub">Bar = last 4 weeks. Thin line = the 4 weeks before. Bar to the right of its line = gaining.</div>
+    <div class="flowkey"><span><i class="sw beat"></i>Beating the market</span><span><i class="sw trail"></i>Trailing the market</span><span><i class="sw ghost"></i>4 weeks before</span></div>
+    <div id="bars" class="bars"></div>
+
+    <h3 class="ch" style="margin-top:22px">Week by week · last 12 weeks</h3>
+    <div class="sub">Each square is one week. Blue = beat the S&amp;P 500 that week, red = trailed it. Darker = bigger gap.
+      A row turning from red to blue is money rotating in.</div>
+    <div id="heat" class="heat"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Dip by sector</h2>
+    <div class="sub">Ranked by how unusual today's drawdown is for that sector's own history.</div>
+    <div class="cards" id="cards"></div>
+    <details style="margin-top:12px">
+      <summary>Table view</summary>
+      <div style="overflow-x:auto"><table id="tbl"></table></div>
+    </details>
+  </section>
+
+  <div class="foot">
+    Data: Yahoo Finance daily closes for SPDR sector ETFs, updated after the US close.
+    Labels: Normal (within 5% of the 52-week high), Pullback (5–10% off), On Sale (10%+ off with selling slowing),
+    Falling Knife (10%+ off and still making new lows below a falling 200-day average). Not investment advice.
+  </div>
+</main>
+
+<script>
+const QCOLOR = { Leading: "var(--good)", Weakening: "var(--warning)", Lagging: "var(--critical)", Improving: "var(--blue)" };
+const BADGE = {
+  "On Sale": ["b-sale", "var(--good)", "▼"], "Pullback": ["b-pull", "var(--warning)", "◆"],
+  "Falling Knife": ["b-knife", "var(--critical)", "✕"], "Normal": ["b-norm", "var(--neutral)", "●"]
+};
+const pct = (v, d = 1) => (v > 0 ? "+" : "") + (v * 100).toFixed(d) + "%";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const badge = l => { const [c, col, ic] = BADGE[l]; return `<span class="badge ${c}"><span class="dot" style="background:${col}"></span>${l}</span>`; };
+
+fetch("data.json?" + Date.now()).then(r => r.json()).then(render).catch(e => {
+  document.getElementById("asof").textContent = "Could not load data.json — run barometer.py first.";
+});
+
+function render(d) {
+  document.getElementById("asof").textContent =
+    `Closing prices as of ${d.as_of} · updated ${new Date(d.updated).toLocaleString()}`;
+  if (d.sample) document.getElementById("banner").innerHTML =
+    '<div class="banner">SAMPLE DATA: generated for testing, not real prices. The daily GitHub Action replaces it with live data.</div>';
+
+  // summary
+  const b = d.benchmark, c = d.counts;
+  document.getElementById("summary").innerHTML = `
+    <div class="stat"><div class="k">S&amp;P 500 (SPY)</div>
+      <div class="v">${pct(b.dd52)}</div><div class="s">from 52-wk high · ${b.label}</div></div>
+    ${["On Sale", "Falling Knife", "Pullback", "Normal"].map(l =>
+      `<div class="stat"><div class="k">${badge(l)}</div><div class="v">${c[l]}</div><div class="s">sectors</div></div>`).join("")}`;
+
+  drawFlows(d);
+
+  // cards
+  document.getElementById("cards").innerHTML = d.sectors.map(s => `
+    <div class="card">
+      <div class="top"><div><span class="tkr">${s.ticker}</span> <span class="nm">${esc(s.name)}</span></div>${badge(s.label)}</div>
+      <div class="row">
+        <div><b>${pct(s.dd52)}</b>from 52-wk high</div>
+        <div><b>${pct(s.chg_1m)}</b>1 month</div>
+        <div><b>${pct(s.rel_3m)}</b>vs SPY 3M</div>
+      </div>
+      <div class="rarity">Deeper than ${s.rarity.toFixed(0)}% of days since ${s.history_start.slice(0, 4)}
+        <div class="bar"><span style="width:${s.rarity}%"></span></div></div>
+      ${spark(s.spark)}
+      <div class="why">${esc(s.why)} <span style="color:var(--muted)">${s.rotation.flow === "in" ? "Money rotating in." : s.rotation.flow === "out" ? "Money rotating out." : ""}</span></div>
+    </div>`).join("");
+
+  document.getElementById("tbl").innerHTML = `<tr><th>Sector</th><th>Label</th><th>52-wk</th><th>ATH</th><th>Rarity</th><th>1M</th><th>3M</th><th>vs 200d</th><th>RSI</th><th>vs SPY 3M</th><th>vs SPY 4W</th><th>P/E</th></tr>` +
+    d.sectors.map(s => `<tr><td>${s.ticker}</td><td>${s.label}</td><td>${pct(s.dd52)}</td><td>${pct(s.dd_ath)}</td><td>${s.rarity.toFixed(0)}%</td>
+      <td>${pct(s.chg_1m)}</td><td>${pct(s.chg_3m)}</td><td>${pct(s.vs_200)}</td><td>${s.rsi.toFixed(0)}</td><td>${pct(s.rel_3m)}</td>
+      <td>${pct(s.rotation.rel_4w)}</td><td>${s.pe ? s.pe.toFixed(1) : "–"}</td></tr>`).join("");
+}
+
+function spark(v) {
+  const W = 300, H = 36, lo = Math.min(...v), hi = Math.max(...v);
+  const pts = v.map((y, i) => `${(i / (v.length - 1) * W).toFixed(1)},${(H - 3 - (y - lo) / (hi - lo || 1) * (H - 6)).toFixed(1)}`).join(" ");
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-label="1-year price">
+    <polyline points="${pts}" fill="none" stroke="var(--text-2)" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>`;
+}
+
+const SHORT = { XLK: "Tech", XLC: "Communication", XLY: "Discretionary", XLF: "Financials", XLV: "Health Care",
+  XLI: "Industrials", XLE: "Energy", XLB: "Materials", XLP: "Staples", XLRE: "Real Estate", XLU: "Utilities" };
+function names(list, sectors) {
+  const n = list.map(t => sectors.find(s => s.ticker === t).name);
+  if (n.length <= 1) return n.join("");
+  if (n.length === 2) return n.join(" and ");
+  return n.slice(0, -1).join(", ") + " and " + n.at(-1);
+}
+
+function drawFlows(d) {
+  const S = d.sectors;
+  const inn = d.rotating_in.slice(0, 3), out = d.rotating_out.slice(0, 3);
+  let h;
+  if (inn.length && out.length) h = `Money is moving <b class="in">into ${names(inn, S)}</b> and <b class="out">out of ${names(out, S)}</b>.`;
+  else if (inn.length) h = `Money is moving <b class="in">into ${names(inn, S)}</b>. Nothing is clearly losing out.`;
+  else if (out.length) h = `Money is moving <b class="out">out of ${names(out, S)}</b>. Nothing is clearly gaining.`;
+  else h = "No clear rotation right now. Sectors are moving roughly with the market.";
+  document.getElementById("headline").innerHTML = h;
+
+  // diverging bars, sorted best to worst
+  const rows = [...S].sort((a, b) => b.rotation.rel_4w - a.rotation.rel_4w);
+  const max = Math.max(0.02, ...rows.flatMap(s => [Math.abs(s.rotation.rel_4w), Math.abs(s.rotation.rel_prev_4w)])) * 1.05;
+  const pos = v => 50 + v / max * 50;
+  document.getElementById("bars").innerHTML = rows.map(s => {
+    const r = s.rotation, v = r.rel_4w;
+    const left = v >= 0 ? 50 : pos(v), width = Math.abs(v) / max * 50;
+    const trend = r.flow === "in" ? "↗ money in" : r.flow === "out" ? "↘ money out" : (v > r.rel_prev_4w ? "gaining a bit" : "slipping a bit");
+    return `<div class="nm">${SHORT[s.ticker] || esc(s.name)}<small>${s.ticker}</small></div>
+      <div class="track" title="${esc(s.name)}: ${pct(v)} vs S&P 500 last 4 weeks (month before: ${pct(r.rel_prev_4w)})">
+        <div class="zero"></div>
+        <div class="fill ${v >= 0 ? "pos" : "neg"}" style="left:${left}%;width:${width}%"></div>
+        <div class="ghost" style="left:calc(${pos(r.rel_prev_4w)}% - 1px)"></div>
+      </div>
+      <div class="val">${pct(v)}<small>${trend}</small></div>`;
+  }).join("");
+
+  // heatmap
+  const weeks = rows[0].rotation.weekly.map(w => w[0]);
+  const all = rows.flatMap(s => s.rotation.weekly.map(w => Math.abs(w[1])));
+  const cap = Math.max(0.01, all.sort((a, b) => a - b)[Math.floor(all.length * 0.9)]);
+  const css = getComputedStyle(document.documentElement);
+  const cell = v => {
+    const t = Math.min(Math.abs(v) / cap, 1);
+    const col = v >= 0 ? "var(--beat)" : "var(--trail)";
+    return `color-mix(in srgb, ${col} ${Math.round(12 + t * 88)}%, var(--grid))`;
+  };
+  const el = document.getElementById("heat");
+  el.style.gridTemplateColumns = `max-content repeat(${weeks.length}, minmax(0, 1fr))`;
+  let hh = `<div></div>` + weeks.map((w, i) => {
+    const dt = new Date(w + "T12:00:00"), prev = i ? new Date(weeks[i - 1] + "T12:00:00") : null;
+    const lab = (!prev || prev.getMonth() !== dt.getMonth()) ? dt.toLocaleString("en", { month: "short" }) : "";
+    return `<div class="hd">${lab}</div>`;
+  }).join("");
+  for (const s of rows) {
+    hh += `<div class="hn">${SHORT[s.ticker] || esc(s.name)}</div>` + s.rotation.weekly.map(([w, v]) =>
+      `<div class="c" style="background:${cell(v)}" title="${esc(s.name)}, week of ${w}: ${pct(v)} vs S&P 500"></div>`).join("");
+  }
+  el.innerHTML = hh;
+}
+</script>
+</body>
+</html>
