@@ -68,7 +68,7 @@
 {
 "ticker": "XLK",
 "name": "Tech",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": 0.0426
 },
 {
@@ -140,7 +140,7 @@
 {
 "ticker": "XLI",
 "name": "Industrials",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": -0.0081
 },
 {
@@ -212,7 +212,7 @@
 {
 "ticker": "XLC",
 "name": "Communication",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": -0.0114
 },
 {
@@ -284,7 +284,7 @@
 {
 "ticker": "XLE",
 "name": "Energy",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": -0.0577
 },
 {
@@ -356,7 +356,7 @@
 {
 "ticker": "XLU",
 "name": "Utilities",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": -0.0323
 },
 {
@@ -428,7 +428,7 @@
 {
 "ticker": "XLY",
 "name": "Discretionary",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": -0.0073
 },
 {
@@ -500,7 +500,7 @@
 {
 "ticker": "XLB",
 "name": "Materials",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": -0.0148
 },
 {
@@ -572,7 +572,7 @@
 {
 "ticker": "XLV",
 "name": "Health Care",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": -0.0348
 },
 {
@@ -644,7 +644,7 @@
 {
 "ticker": "XLRE",
 "name": "Real Estate",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": -0.0367
 },
 {
@@ -716,7 +716,7 @@
 {
 "ticker": "XLF",
 "name": "Financials",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": -0.0273
 },
 {
@@ -788,7 +788,7 @@
 {
 "ticker": "XLP",
 "name": "Staples",
-"week": "2026-11-27",
+"week": "2026-11-23",
 "rel": -0.048
 }
 ]
