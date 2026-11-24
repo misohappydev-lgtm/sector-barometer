@@ -213,9 +213,9 @@ def analyze(s: pd.Series, spy: pd.Series) -> dict:
     }
 
 
-PERIODS = {"1d": 1, "1w": 5, "4w": 20, "3m": 63, "6m": 126}  # trading days
-FLOW_MIN = {"1d": 0.002, "1w": 0.004, "4w": 0.005, "3m": 0.01, "6m": 0.015}  # gap vs SPY needed to call a flow
-PERIOD_WORDS = {"1d": "today", "1w": "this week", "4w": "over the last 4 weeks", "3m": "over the last 3 months", "6m": "over the last 6 months"}
+PERIODS = {"1d": 1, "1w": 5, "4w": 20, "3m": 63, "6m": 126, "1y": 252}  # trading days
+FLOW_MIN = {"1d": 0.002, "1w": 0.004, "4w": 0.005, "3m": 0.01, "6m": 0.015, "1y": 0.02}  # gap vs SPY needed to call a flow
+PERIOD_WORDS = {"1d": "today", "1w": "this week", "4w": "over the last 4 weeks", "3m": "over the last 3 months", "6m": "over the last 6 months", "1y": "over the last year"}
 
 
 def _ret(x: pd.Series, n0: int, n1: int) -> float:
@@ -276,7 +276,7 @@ def _verdict(r: dict, period: str) -> tuple[str, str]:
         v, mood = f"Risk-off {words}: stocks are trailing cash, and safe money is favoring {best}.", "off"
     else:
         v, mood = f"Mixed {words}: stocks are up, but bonds or gold are doing better.", "mixed"
-    lim = {"1d": 0.003, "1w": 0.006, "4w": 0.01, "3m": 0.02, "6m": 0.03}[period]
+    lim = {"1d": 0.003, "1w": 0.006, "4w": 0.01, "3m": 0.02, "6m": 0.03, "1y": 0.04}[period]
     if credit < -lim:
         v += " Junk bonds are lagging Treasuries, an early stress sign."
     elif credit > lim:
@@ -489,6 +489,9 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
         summary["mmf_change_4w_bn"] = round(known[-1]["total_bn"] - known[-5]["total_bn"], 1) if len(known) >= 5 else None
         summary["mmf_change_13w_bn"] = round(known[-1]["total_bn"] - known[-14]["total_bn"], 1) if len(known) >= 14 else None
         summary["mmf_change_26w_bn"] = round(known[-1]["total_bn"] - known[-27]["total_bn"], 1) if len(known) >= 27 else None
+        base = known[-53] if len(known) >= 53 else known[0]
+        summary["mmf_change_1y_bn"] = round(known[-1]["total_bn"] - base["total_bn"], 1)
+        summary["mmf_change_1y_since"] = base["week_end"]
         summary["mmf_weeks"] = len(mmf)
 
     sector_rows, week_rows, rs_rows = [], [], []

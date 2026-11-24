@@ -34,6 +34,8 @@ def main(week_end: str, total_bn: float, change_bn: float) -> None:
         mmf_change_4w_bn=round(known[-1]["total_bn"] - known[-5]["total_bn"], 1) if len(known) >= 5 else None,
         mmf_change_13w_bn=round(known[-1]["total_bn"] - known[-14]["total_bn"], 1) if len(known) >= 14 else None,
         mmf_change_26w_bn=round(known[-1]["total_bn"] - known[-27]["total_bn"], 1) if len(known) >= 27 else None,
+        mmf_change_1y_bn=round(known[-1]["total_bn"] - (known[-53] if len(known) >= 53 else known[0])["total_bn"], 1),
+        mmf_change_1y_since=(known[-53] if len(known) >= 53 else known[0])["week_end"],
         mmf_weeks=len(hist),
     )
     summ_path.write_text(json.dumps(summ, indent=0))
