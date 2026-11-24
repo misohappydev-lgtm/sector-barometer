@@ -432,6 +432,57 @@ def build_insights(rows: list[dict], summary: dict, sh: dict) -> tuple[list[dict
     for t, r in avoid.iterrows():
         out.append({"kind": "avoid", "ticker": t, "name": r["name"], "score": int(r.score), "reason": reason(r)})
 
+    # Story across all timeframes, longest first, then what it adds up to
+    order = [("1y", "Past year"), ("6m", "Past 6 months"), ("3m", "Past 3 months"),
+             ("4w", "Past 4 weeks"), ("1w", "This week"), ("1d", "Today")]
+    mood_word = {"on": "risk-on", "off": "risk-off", "mixed": "mixed"}
+    tops = {}
+    for k, lab in order:
+        col = f"rel_{k}"
+        if col not in df:
+            continue
+        srt = df.sort_values(col, ascending=False)
+        lead, lag = srt.head(2), srt.tail(2).iloc[::-1]
+        tops[k] = list(srt.head(3).index)
+        spy = summary.get(f"spy_ret_{k}")
+        txt = (f"{mood_word.get(summary.get(f'mood_{k}'), 'mixed').capitalize()}"
+               + (f", S&P 500 {_p(spy)}" if spy is not None else "")
+               + ". Led by " + " and ".join(f"{r['name']} ({_p(r[col])})" for _, r in lead.iterrows())
+               + "; lagging " + " and ".join(f"{r['name']} ({_p(r[col])})" for _, r in lag.iterrows()) + ".")
+        out.append({"kind": "story", "ticker": k, "name": lab, "score": 0, "reason": txt})
+
+    moods = [summary.get(f"mood_{k}") for k, _ in order]
+    labels = [lab.lower() for _, lab in order]
+    # where did the mood change? scan from longest to shortest
+    shift = None
+    for i in range(1, len(moods)):
+        if moods[i] != moods[i - 1] and moods[i] in ("on", "off") and moods[i - 1] in ("on", "off", "mixed"):
+            shift = i
+            break
+    parts = []
+    if shift is not None:
+        parts.append(f"The mood turned {mood_word[moods[shift]]} somewhere between the {labels[shift - 1]} and the {labels[shift]} view")
+        rest = moods[shift:]
+        if all(m == moods[shift] for m in rest[:3]):
+            parts[-1] += f", and it has held since"
+        if moods[-1] != moods[shift] or moods[-2] != moods[shift]:
+            parts[-1] += f", though the latest days show a {'bounce' if moods[-1] == 'on' or moods[-2] == 'on' else 'wobble'}"
+        parts[-1] += "."
+    else:
+        parts.append(f"The mood has been {mood_word.get(moods[0], 'mixed')} across every timeframe.")
+    from collections import Counter
+    cnt = Counter(t for k in ("1y", "6m", "3m", "4w") if k in tops for t in tops[k])
+    steady = [df.loc[t, "name"] for t, c in cnt.most_common() if c >= 3]
+    if steady:
+        parts.append("Steady leaders across the longer views: " + ", ".join(steady) + ".")
+    recent = [t for t in tops.get("4w", []) if t not in tops.get("1y", [])]
+    if recent:
+        parts.append("Newer leaders (strong lately, not over the year): " + ", ".join(df.loc[t, "name"] for t in recent) + ".")
+    faded = [t for t in tops.get("1y", []) if df.loc[t, "rel_4w"] < 0]
+    if faded:
+        parts.append("Fading former leaders: " + ", ".join(df.loc[t, "name"] for t in faded) + ".")
+    out.append({"kind": "takeaway", "ticker": "all", "name": "What it adds up to", "score": 0, "reason": " ".join(parts)})
+
     # Market regime in one line
     m4, m3 = summary.get("mood_4w"), summary.get("mood_3m")
     defensive = {"XLV", "XLP", "XLU", "XLRE"}
