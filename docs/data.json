@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T11:33+00:00",
+ "updated": "2026-11-24T11:38+00:00",
  "as_of": "2026-11-23",
  "sample": false,
  "safe_havens": {
@@ -8,6 +8,10 @@
     "ticker": "SPY",
     "name": "US large caps (S&P 500)",
     "group": "Stocks",
+    "ret_1d": 0.0471,
+    "ret_prev_1d": -0.0364,
+    "ret_1w": -0.0239,
+    "ret_prev_1w": -0.0169,
     "ret_4w": -0.0563,
     "ret_prev_4w": -0.0003
    },
@@ -15,6 +19,10 @@
     "ticker": "IWM",
     "name": "US small caps (Russell 2000)",
     "group": "Stocks",
+    "ret_1d": 0.0356,
+    "ret_prev_1d": -0.0288,
+    "ret_1w": -0.0264,
+    "ret_prev_1w": -0.0339,
     "ret_4w": -0.0406,
     "ret_prev_4w": -0.0108
    },
@@ -22,6 +30,10 @@
     "ticker": "VEA",
     "name": "Developed markets (Europe, Japan)",
     "group": "Stocks",
+    "ret_1d": 0.0308,
+    "ret_prev_1d": -0.0317,
+    "ret_1w": -0.0387,
+    "ret_prev_1w": -0.0239,
     "ret_4w": -0.0541,
     "ret_prev_4w": -0.0278
    },
@@ -29,6 +41,10 @@
     "ticker": "EEM",
     "name": "Emerging markets (China, India...)",
     "group": "Stocks",
+    "ret_1d": 0.0741,
+    "ret_prev_1d": -0.0513,
+    "ret_1w": -0.018,
+    "ret_prev_1w": -0.0351,
     "ret_4w": -0.0645,
     "ret_prev_4w": -0.0801
    },
@@ -36,6 +52,10 @@
     "ticker": "BIL",
     "name": "Cash (T-bills, money markets)",
     "group": "Safe",
+    "ret_1d": 0.0001,
+    "ret_prev_1d": 0.0002,
+    "ret_1w": 0.0005,
+    "ret_prev_1w": 0.0008,
     "ret_4w": 0.0029,
     "ret_prev_4w": 0.003
    },
@@ -43,6 +63,10 @@
     "ticker": "IEF",
     "name": "Treasuries (7-10 yr)",
     "group": "Safe",
+    "ret_1d": -0.0001,
+    "ret_prev_1d": 0.0091,
+    "ret_1w": 0.0155,
+    "ret_prev_1w": -0.017,
     "ret_4w": 0.0091,
     "ret_prev_4w": 0.0213
    },
@@ -50,6 +74,10 @@
     "ticker": "TLT",
     "name": "Treasuries (20+ yr)",
     "group": "Safe",
+    "ret_1d": 0.0029,
+    "ret_prev_1d": 0.0137,
+    "ret_1w": 0.0291,
+    "ret_prev_1w": -0.0315,
     "ret_4w": 0.0043,
     "ret_prev_4w": 0.0431
    },
@@ -57,6 +85,10 @@
     "ticker": "GLD",
     "name": "Gold",
     "group": "Safe",
+    "ret_1d": 0.0314,
+    "ret_prev_1d": -0.0367,
+    "ret_1w": -0.0564,
+    "ret_prev_1w": -0.0701,
     "ret_4w": -0.0946,
     "ret_prev_4w": -0.0267
    },
@@ -64,6 +96,10 @@
     "ticker": "UUP",
     "name": "US dollar",
     "group": "Safe",
+    "ret_1d": 0.0054,
+    "ret_prev_1d": -0.0003,
+    "ret_1w": 0.0074,
+    "ret_prev_1w": 0.0204,
     "ret_4w": 0.0265,
     "ret_prev_4w": 0.0108
    },
@@ -71,6 +107,10 @@
     "ticker": "HYG",
     "name": "Junk bonds",
     "group": "Other",
+    "ret_1d": 0.0025,
+    "ret_prev_1d": -0.0026,
+    "ret_1w": -0.0027,
+    "ret_prev_1w": -0.0101,
     "ret_4w": -0.0036,
     "ret_prev_4w": 0.0
    },
@@ -78,6 +118,10 @@
     "ticker": "DBC",
     "name": "Commodities (oil, metals, crops)",
     "group": "Other",
+    "ret_1d": -0.0072,
+    "ret_prev_1d": -0.0101,
+    "ret_1w": -0.0377,
+    "ret_prev_1w": -0.0236,
     "ret_4w": -0.1382,
     "ret_prev_4w": 0.0397
    },
@@ -85,13 +129,22 @@
     "ticker": "IBIT",
     "name": "Bitcoin",
     "group": "Other",
+    "ret_1d": 0.0485,
+    "ret_prev_1d": -0.0587,
+    "ret_1w": -0.059,
+    "ret_prev_1w": -0.1307,
     "ret_4w": -0.2344,
     "ret_prev_4w": -0.0422
    }
   ],
-  "verdict": "Risk-off: stocks are trailing cash. Safe money is favoring bonds. Junk bonds are lagging Treasuries, an early stress sign.",
-  "mood": "off",
-  "credit_gap": -0.0127
+  "verdict_1d": "Risk-on today: money is choosing stocks over bonds and cash.",
+  "mood_1d": "on",
+  "verdict_1w": "Risk-off this week: stocks are trailing cash, and safe money is favoring bonds. Junk bonds are lagging Treasuries, an early stress sign.",
+  "mood_1w": "off",
+  "verdict_4w": "Risk-off over the last 4 weeks: stocks are trailing cash, and safe money is favoring bonds. Junk bonds are lagging Treasuries, an early stress sign.",
+  "mood_4w": "off",
+  "verdict": "Risk-off over the last 4 weeks: stocks are trailing cash, and safe money is favoring bonds. Junk bonds are lagging Treasuries, an early stress sign.",
+  "mood": "off"
  },
  "benchmark": {
   "price": 722.29,
@@ -304,9 +357,16 @@
    "name": "Technology",
    "pe": 28.636087,
    "rotation": {
-    "rel_4w": -0.0512,
-    "rel_prev_4w": -0.0835,
-    "flow": "flat",
+    "rel_1d": 0.0426,
+    "rel_prev_1d": -0.0363,
+    "flow_1d": "in",
+    "rel_1w": 0.0094,
+    "rel_prev_1w": -0.0189,
+    "flow_1w": "in",
+    "rel_4w": -0.0722,
+    "rel_prev_4w": -0.0419,
+    "flow_4w": "out",
+    "flow": "out",
     "weekly": [
      [
       "2026-09-11",
@@ -465,8 +525,15 @@
    "name": "Industrials",
    "pe": 26.05767,
    "rotation": {
-    "rel_4w": 0.0148,
-    "rel_prev_4w": 0.0031,
+    "rel_1d": -0.0081,
+    "rel_prev_1d": 0.0055,
+    "flow_1d": "out",
+    "rel_1w": 0.0046,
+    "rel_prev_1w": -0.0022,
+    "flow_1w": "in",
+    "rel_4w": 0.0294,
+    "rel_prev_4w": -0.0105,
+    "flow_4w": "in",
     "flow": "in",
     "weekly": [
      [
@@ -626,8 +693,15 @@
    "name": "Communication Services",
    "pe": 16.456394,
    "rotation": {
-    "rel_4w": 0.0813,
-    "rel_prev_4w": -0.0764,
+    "rel_1d": -0.0114,
+    "rel_prev_1d": 0.0098,
+    "flow_1d": "out",
+    "rel_1w": -0.0063,
+    "rel_prev_1w": 0.0119,
+    "flow_1w": "out",
+    "rel_4w": 0.0539,
+    "rel_prev_4w": -0.0656,
+    "flow_4w": "in",
     "flow": "in",
     "weekly": [
      [
@@ -787,8 +861,15 @@
    "name": "Energy",
    "pe": 14.954057,
    "rotation": {
-    "rel_4w": -0.1007,
-    "rel_prev_4w": 0.1327,
+    "rel_1d": -0.0577,
+    "rel_prev_1d": 0.0302,
+    "flow_1d": "out",
+    "rel_1w": -0.0361,
+    "rel_prev_1w": 0.0452,
+    "flow_1w": "out",
+    "rel_4w": -0.084,
+    "rel_prev_4w": 0.1217,
+    "flow_4w": "out",
     "flow": "out",
     "weekly": [
      [
@@ -948,8 +1029,15 @@
    "name": "Utilities",
    "pe": 17.818724,
    "rotation": {
-    "rel_4w": 0.0417,
-    "rel_prev_4w": 0.1085,
+    "rel_1d": -0.0323,
+    "rel_prev_1d": 0.029,
+    "flow_1d": "out",
+    "rel_1w": 0.0057,
+    "rel_prev_1w": 0.0245,
+    "flow_1w": "flat",
+    "rel_4w": 0.0744,
+    "rel_prev_4w": 0.0844,
+    "flow_4w": "flat",
     "flow": "flat",
     "weekly": [
      [
@@ -1109,9 +1197,16 @@
    "name": "Consumer Discretionary",
    "pe": 24.472578,
    "rotation": {
-    "rel_4w": 0.0577,
-    "rel_prev_4w": 0.0666,
-    "flow": "flat",
+    "rel_1d": -0.0073,
+    "rel_prev_1d": 0.0069,
+    "flow_1d": "out",
+    "rel_1w": 0.0135,
+    "rel_prev_1w": -0.0067,
+    "flow_1w": "in",
+    "rel_4w": 0.0797,
+    "rel_prev_4w": 0.0486,
+    "flow_4w": "in",
+    "flow": "in",
     "weekly": [
      [
       "2026-09-11",
@@ -1270,9 +1365,16 @@
    "name": "Materials",
    "pe": 20.751513,
    "rotation": {
-    "rel_4w": -0.0096,
-    "rel_prev_4w": 0.0975,
-    "flow": "out",
+    "rel_1d": -0.0148,
+    "rel_prev_1d": 0.0145,
+    "flow_1d": "out",
+    "rel_1w": -0.0066,
+    "rel_prev_1w": -0.0108,
+    "flow_1w": "flat",
+    "rel_4w": 0.0275,
+    "rel_prev_4w": 0.0389,
+    "flow_4w": "flat",
+    "flow": "flat",
     "weekly": [
      [
       "2026-09-11",
@@ -1431,9 +1533,16 @@
    "name": "Health Care",
    "pe": 29.245377,
    "rotation": {
-    "rel_4w": 0.0148,
-    "rel_prev_4w": 0.1306,
-    "flow": "flat",
+    "rel_1d": -0.0348,
+    "rel_prev_1d": 0.0352,
+    "flow_1d": "out",
+    "rel_1w": -0.0212,
+    "rel_prev_1w": 0.0145,
+    "flow_1w": "out",
+    "rel_4w": 0.0571,
+    "rel_prev_4w": 0.0471,
+    "flow_4w": "in",
+    "flow": "in",
     "weekly": [
      [
       "2026-09-11",
@@ -1592,9 +1701,16 @@
    "name": "Real Estate",
    "pe": 28.646397,
    "rotation": {
-    "rel_4w": 0.038,
-    "rel_prev_4w": 0.0759,
-    "flow": "flat",
+    "rel_1d": -0.0367,
+    "rel_prev_1d": 0.0266,
+    "flow_1d": "out",
+    "rel_1w": -0.0066,
+    "rel_prev_1w": 0.0082,
+    "flow_1w": "out",
+    "rel_4w": 0.0586,
+    "rel_prev_4w": 0.0354,
+    "flow_4w": "in",
+    "flow": "in",
     "weekly": [
      [
       "2026-09-11",
@@ -1753,9 +1869,16 @@
    "name": "Financials",
    "pe": 15.031037,
    "rotation": {
-    "rel_4w": 0.029,
-    "rel_prev_4w": 0.0745,
-    "flow": "flat",
+    "rel_1d": -0.0273,
+    "rel_prev_1d": 0.0182,
+    "flow_1d": "out",
+    "rel_1w": -0.0196,
+    "rel_prev_1w": 0.0202,
+    "flow_1w": "out",
+    "rel_4w": 0.0497,
+    "rel_prev_4w": 0.0341,
+    "flow_4w": "in",
+    "flow": "in",
     "weekly": [
      [
       "2026-09-11",
@@ -1914,9 +2037,16 @@
    "name": "Consumer Staples",
    "pe": 24.322296,
    "rotation": {
-    "rel_4w": 0.055,
-    "rel_prev_4w": 0.1285,
-    "flow": "flat",
+    "rel_1d": -0.048,
+    "rel_prev_1d": 0.0431,
+    "flow_1d": "out",
+    "rel_1w": -0.0001,
+    "rel_prev_1w": 0.0357,
+    "flow_1w": "flat",
+    "rel_4w": 0.0838,
+    "rel_prev_4w": 0.0693,
+    "flow_4w": "in",
+    "flow": "in",
     "weekly": [
      [
       "2026-09-11",
@@ -1972,12 +2102,17 @@
   }
  ],
  "rotating_in": [
+  "XLP",
+  "XLY",
+  "XLRE",
+  "XLV",
   "XLC",
+  "XLF",
   "XLI"
  ],
  "rotating_out": [
   "XLE",
-  "XLB"
+  "XLK"
  ],
  "counts": {
   "On Sale": 4,

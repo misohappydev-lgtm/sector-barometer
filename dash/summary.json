@@ -1,0 +1,21 @@
+[
+{
+"as_of": "2026-11-23",
+"sample": false,
+"spy_dd52": -0.0729,
+"spy_label": "Pullback",
+"on_sale": 4,
+"falling_knife": 0,
+"pullback": 6,
+"normal": 1,
+"rotation_1d": "Money is moving into Tech and out of Energy, Staples and Real Estate today.",
+"verdict_1d": "Risk-on today: money is choosing stocks over bonds and cash.",
+"mood_1d": "on",
+"rotation_1w": "Money is moving into Discretionary, Tech and Industrials and out of Energy, Health Care and Financials this week.",
+"verdict_1w": "Risk-off this week: stocks are trailing cash, and safe money is favoring bonds. Junk bonds are lagging Treasuries, an early stress sign.",
+"mood_1w": "off",
+"rotation_4w": "Money is moving into Staples, Discretionary and Real Estate and out of Energy and Tech over the last 4 weeks.",
+"verdict_4w": "Risk-off over the last 4 weeks: stocks are trailing cash, and safe money is favoring bonds. Junk bonds are lagging Treasuries, an early stress sign.",
+"mood_4w": "off"
+}
+]
