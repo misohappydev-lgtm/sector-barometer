@@ -213,9 +213,9 @@ def analyze(s: pd.Series, spy: pd.Series) -> dict:
     }
 
 
-PERIODS = {"1d": 1, "1w": 5, "4w": 20}          # trading days
-FLOW_MIN = {"1d": 0.002, "1w": 0.004, "4w": 0.005}  # gap vs SPY needed to call a flow
-PERIOD_WORDS = {"1d": "today", "1w": "this week", "4w": "over the last 4 weeks"}
+PERIODS = {"1d": 1, "1w": 5, "4w": 20, "3m": 63}  # trading days
+FLOW_MIN = {"1d": 0.002, "1w": 0.004, "4w": 0.005, "3m": 0.01}  # gap vs SPY needed to call a flow
+PERIOD_WORDS = {"1d": "today", "1w": "this week", "4w": "over the last 4 weeks", "3m": "over the last 3 months"}
 
 
 def _ret(x: pd.Series, n0: int, n1: int) -> float:
@@ -253,6 +253,13 @@ def rotation(s: pd.Series, spy: pd.Series, weeks: int = 12) -> dict:
             rows.append([idx[e].strftime("%Y-%m-%d"), round(float(rel), 4)])
         out["blocks"][key] = rows[::-1]
     out["weekly"] = out["blocks"]["1w"]
+    # relative strength line: sector / S&P 500 over ~6 months, starting at 100
+    ratio = (s / spy_a).iloc[-127:]
+    ratio = 100 * ratio / ratio.iloc[0]
+    pts = ratio.iloc[::2]
+    if pts.index[-1] != ratio.index[-1]:
+        pts = pd.concat([pts, ratio.iloc[-1:]])
+    out["rs"] = [[d.strftime("%Y-%m-%d"), round(float(v), 2)] for d, v in pts.items()]
     return out
 
 
@@ -269,7 +276,7 @@ def _verdict(r: dict, period: str) -> tuple[str, str]:
         v, mood = f"Risk-off {words}: stocks are trailing cash, and safe money is favoring {best}.", "off"
     else:
         v, mood = f"Mixed {words}: stocks are up, but bonds or gold are doing better.", "mixed"
-    lim = {"1d": 0.003, "1w": 0.006, "4w": 0.01}[period]
+    lim = {"1d": 0.003, "1w": 0.006, "4w": 0.01, "3m": 0.02}[period]
     if credit < -lim:
         v += " Junk bonds are lagging Treasuries, an early stress sign."
     elif credit > lim:
@@ -402,7 +409,7 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
         summary["mmf_change_4w_bn"] = round(known[-1]["total_bn"] - known[-5]["total_bn"], 1) if len(known) >= 5 else None
         summary["mmf_weeks"] = len(mmf)
 
-    sector_rows, week_rows = [], []
+    sector_rows, week_rows, rs_rows = [], [], []
     for r in secs:
         row = {"ticker": r["ticker"], "name": SHORT[r["ticker"]], "label": r["label"], "why": r["why"],
                "dd52": r["dd52"], "rarity": r["rarity"], "since": r["history_start"][:4],
@@ -413,6 +420,8 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
             row[f"rel_prev_{key}"] = r["rotation"][f"rel_prev_{key}"]
             row[f"flow_{key}"] = r["rotation"][f"flow_{key}"]
         sector_rows.append(row)
+        for d, v in r["rotation"]["rs"]:
+            rs_rows.append({"ticker": r["ticker"], "name": SHORT[r["ticker"]], "date": d, "rs": v})
         for key, blocks in r["rotation"]["blocks"].items():
             for end, v in blocks:
                 week_rows.append({"ticker": r["ticker"], "name": SHORT[r["ticker"]], "period": key, "end": end, "rel": v})
@@ -424,6 +433,7 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
     dump("sector_weeks.json", week_rows)
     dump("assets.json", sh["assets"])
     dump("mmf.json", mmf)
+    dump("rs.json", rs_rows)
     print(f"Wrote dashboard files to {DASH}")
 
 
