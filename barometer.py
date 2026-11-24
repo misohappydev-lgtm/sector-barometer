@@ -75,6 +75,14 @@ def fetch_live() -> tuple[pd.DataFrame, dict]:
     if closes is None:
         raise RuntimeError("Could not download price data")
 
+    # Ignore today's partial bar if the US market hasn't closed yet (runs during trading hours)
+    from zoneinfo import ZoneInfo
+    now_et = datetime.now(ZoneInfo("America/New_York"))
+    last = closes.index[-1]
+    if last.date() == now_et.date() and (now_et.hour, now_et.minute) < (16, 15):
+        closes = closes.iloc[:-1]
+        print(f"Dropped today's partial bar ({last.date()}); market still open")
+
     pe = {}
     for t in tickers:
         try:
