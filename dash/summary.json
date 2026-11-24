@@ -31,8 +31,10 @@
 "mmf_week_end": "2026-11-18",
 "mmf_total_bn": 7976.4,
 "mmf_change_1w_bn": -3.58,
-"mmf_change_4w_bn": null,
-"mmf_weeks": 2,
-"insight_mood": "Risk-off: over both 4 weeks and 3 months, money has favored bonds and cash over stocks. Leadership is mostly defensive (Staples, Discretionary, Health Care). The S&P 500 is 7% below its high (pullback)."
+"mmf_change_4w_bn": 31.8,
+"mmf_weeks": 50,
+"insight_mood": "Risk-off: over both 4 weeks and 3 months, money has favored bonds and cash over stocks. Leadership is mostly defensive (Staples, Discretionary, Health Care). The S&P 500 is 7% below its high (pullback).",
+"mmf_change_13w_bn": 48.4,
+"mmf_change_26w_bn": 210.4
 }
 ]

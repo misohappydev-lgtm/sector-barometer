@@ -1,4 +1,252 @@
 [
- {"week_end": "2026-11-11", "total_bn": 7980.0, "change_bn": null},
- {"week_end": "2026-11-18", "total_bn": 7976.4, "change_bn": -3.58}
+ {
+  "week_end": "2025-12-10",
+  "total_bn": 7655.0,
+  "change_bn": null
+ },
+ {
+  "week_end": "2025-12-17",
+  "total_bn": 7666.0,
+  "change_bn": 11.0
+ },
+ {
+  "week_end": "2025-12-23",
+  "total_bn": 7673.0,
+  "change_bn": 7.0
+ },
+ {
+  "week_end": "2025-12-30",
+  "total_bn": 7733.0,
+  "change_bn": 60.0
+ },
+ {
+  "week_end": "2026-01-07",
+  "total_bn": 7804.0,
+  "change_bn": 71.0
+ },
+ {
+  "week_end": "2026-01-14",
+  "total_bn": 7729.0,
+  "change_bn": -75.0
+ },
+ {
+  "week_end": "2026-01-21",
+  "total_bn": 7699.0,
+  "change_bn": -30.0
+ },
+ {
+  "week_end": "2026-01-28",
+  "total_bn": 7712.0,
+  "change_bn": 13.0
+ },
+ {
+  "week_end": "2026-02-04",
+  "total_bn": 7797.0,
+  "change_bn": 85.0
+ },
+ {
+  "week_end": "2026-02-11",
+  "total_bn": 7774.0,
+  "change_bn": -23.0
+ },
+ {
+  "week_end": "2026-02-18",
+  "total_bn": 7791.0,
+  "change_bn": 17.0
+ },
+ {
+  "week_end": "2026-02-25",
+  "total_bn": 7797.0,
+  "change_bn": 6.0
+ },
+ {
+  "week_end": "2026-03-04",
+  "total_bn": 7817.0,
+  "change_bn": 20.0
+ },
+ {
+  "week_end": "2026-03-11",
+  "total_bn": 7822.0,
+  "change_bn": 5.0
+ },
+ {
+  "week_end": "2026-03-18",
+  "total_bn": 7861.0,
+  "change_bn": 39.0
+ },
+ {
+  "week_end": "2026-03-25",
+  "total_bn": 7808.0,
+  "change_bn": -53.0
+ },
+ {
+  "week_end": "2026-04-01",
+  "total_bn": 7814.0,
+  "change_bn": 6.0
+ },
+ {
+  "week_end": "2026-04-08",
+  "total_bn": 7823.0,
+  "change_bn": 9.0
+ },
+ {
+  "week_end": "2026-04-15",
+  "total_bn": 7647.0,
+  "change_bn": -176.0
+ },
+ {
+  "week_end": "2026-04-22",
+  "total_bn": 7639.0,
+  "change_bn": -8.0
+ },
+ {
+  "week_end": "2026-04-29",
+  "total_bn": 7628.0,
+  "change_bn": -11.0
+ },
+ {
+  "week_end": "2026-05-06",
+  "total_bn": 7748.0,
+  "change_bn": 120.0
+ },
+ {
+  "week_end": "2026-05-13",
+  "total_bn": 7749.0,
+  "change_bn": 1.0
+ },
+ {
+  "week_end": "2026-05-20",
+  "total_bn": 7766.0,
+  "change_bn": 17.0
+ },
+ {
+  "week_end": "2026-05-27",
+  "total_bn": 7780.0,
+  "change_bn": 14.0
+ },
+ {
+  "week_end": "2026-06-03",
+  "total_bn": 7889.0,
+  "change_bn": 109.0
+ },
+ {
+  "week_end": "2026-06-10",
+  "total_bn": 7874.0,
+  "change_bn": -15.0
+ },
+ {
+  "week_end": "2026-06-17",
+  "total_bn": 7913.0,
+  "change_bn": 39.0
+ },
+ {
+  "week_end": "2026-06-24",
+  "total_bn": 7894.0,
+  "change_bn": -19.0
+ },
+ {
+  "week_end": "2026-07-01",
+  "total_bn": 7938.0,
+  "change_bn": 44.0
+ },
+ {
+  "week_end": "2026-07-08",
+  "total_bn": 7943.0,
+  "change_bn": 5.0
+ },
+ {
+  "week_end": "2026-07-15",
+  "total_bn": 7883.0,
+  "change_bn": -60.0
+ },
+ {
+  "week_end": "2026-07-22",
+  "total_bn": 7861.0,
+  "change_bn": -22.0
+ },
+ {
+  "week_end": "2026-07-29",
+  "total_bn": 7854.0,
+  "change_bn": -7.0
+ },
+ {
+  "week_end": "2026-08-05",
+  "total_bn": 7909.0,
+  "change_bn": 55.0
+ },
+ {
+  "week_end": "2026-08-12",
+  "total_bn": 7928.0,
+  "change_bn": 19.0
+ },
+ {
+  "week_end": "2026-08-19",
+  "total_bn": 7928.0,
+  "change_bn": 0.0
+ },
+ {
+  "week_end": "2026-08-26",
+  "total_bn": 7935.0,
+  "change_bn": 7.0
+ },
+ {
+  "week_end": "2026-09-02",
+  "total_bn": 7979.0,
+  "change_bn": 44.0
+ },
+ {
+  "week_end": "2026-09-09",
+  "total_bn": 7973.0,
+  "change_bn": -6.0
+ },
+ {
+  "week_end": "2026-09-16",
+  "total_bn": 7922.0,
+  "change_bn": -51.0
+ },
+ {
+  "week_end": "2026-09-23",
+  "total_bn": 7937.0,
+  "change_bn": 15.0
+ },
+ {
+  "week_end": "2026-09-30",
+  "total_bn": 7891.0,
+  "change_bn": -45.45
+ },
+ {
+  "week_end": "2026-10-07",
+  "total_bn": 7964.0,
+  "change_bn": 72.27
+ },
+ {
+  "week_end": "2026-10-14",
+  "total_bn": 7923.0,
+  "change_bn": -40.46
+ },
+ {
+  "week_end": "2026-10-21",
+  "total_bn": 7944.6,
+  "change_bn": 21.49
+ },
+ {
+  "week_end": "2026-10-28",
+  "total_bn": 7901.3,
+  "change_bn": -43.29
+ },
+ {
+  "week_end": "2026-11-04",
+  "total_bn": 8016.0,
+  "change_bn": 114.72
+ },
+ {
+  "week_end": "2026-11-11",
+  "total_bn": 7980.0,
+  "change_bn": -35.72
+ },
+ {
+  "week_end": "2026-11-18",
+  "total_bn": 7976.4,
+  "change_bn": -3.58
+ }
 ]
