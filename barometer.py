@@ -234,17 +234,25 @@ def rotation(s: pd.Series, spy: pd.Series, weeks: int = 12) -> dict:
         before = _ret(s, 2 * n, n) - _ret(spy_a, 2 * n, n)
         thr = FLOW_MIN[key]
         flow = "in" if (now > thr and now > before) else "out" if (now < -thr and now < before) else "flat"
+        out[f"ret_{key}"] = round(_ret(s, n, 0), 4)
         out[f"rel_{key}"] = round(now, 4)
         out[f"rel_prev_{key}"] = round(before, 4)
         out[f"flow_{key}"] = flow
     out["flow"] = out["flow_4w"]
 
-    wk = s.resample("W-FRI").last().dropna()
-    sw = spy.resample("W-FRI").last().reindex(wk.index).ffill()
-    rel_w = (wk.pct_change() - sw.pct_change()).dropna().iloc[-weeks:]
-    # label each week by its last actual trading day (the current week isn't over yet)
-    last_day = s.index.to_series().resample("W-FRI").last()
-    out["weekly"] = [[last_day.loc[d].strftime("%Y-%m-%d"), round(float(v), 4)] for d, v in rel_w.items()]
+    # 12 back-to-back blocks per period (12 days, 12 weeks, 12 four-week spans), newest last
+    out["blocks"] = {}
+    idx = s.index
+    for key, n in PERIODS.items():
+        rows = []
+        for k in range(weeks):
+            e, b = len(idx) - 1 - k * n, len(idx) - 1 - (k + 1) * n
+            if b < 0:
+                break
+            rel = (s.iloc[e] / s.iloc[b] - 1) - (spy_a.iloc[e] / spy_a.iloc[b] - 1)
+            rows.append([idx[e].strftime("%Y-%m-%d"), round(float(rel), 4)])
+        out["blocks"][key] = rows[::-1]
+    out["weekly"] = out["blocks"]["1w"]
     return out
 
 
@@ -365,6 +373,9 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
                "spy_dd52": out["benchmark"]["dd52"], "spy_label": out["benchmark"]["label"],
                "on_sale": out["counts"]["On Sale"], "falling_knife": out["counts"]["Falling Knife"],
                "pullback": out["counts"]["Pullback"], "normal": out["counts"]["Normal"]}
+    spy_rows = {a["ticker"]: a for a in sh["assets"]}
+    for key in PERIODS:
+        summary[f"spy_ret_{key}"] = spy_rows["SPY"][f"ret_{key}"] if "SPY" in spy_rows else None
     for key in PERIODS:
         ins = sorted([r for r in secs if r["rotation"][f"flow_{key}"] == "in"], key=lambda r: -r["rotation"][f"rel_{key}"])
         outs = sorted([r for r in secs if r["rotation"][f"flow_{key}"] == "out"], key=lambda r: r["rotation"][f"rel_{key}"])
@@ -397,12 +408,14 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
                "dd52": r["dd52"], "rarity": r["rarity"], "since": r["history_start"][:4],
                "chg_1m": r["chg_1m"], "rank": r["rank"]}
         for key in PERIODS:
+            row[f"ret_{key}"] = r["rotation"][f"ret_{key}"]
             row[f"rel_{key}"] = r["rotation"][f"rel_{key}"]
             row[f"rel_prev_{key}"] = r["rotation"][f"rel_prev_{key}"]
             row[f"flow_{key}"] = r["rotation"][f"flow_{key}"]
         sector_rows.append(row)
-        for wk, v in r["rotation"]["weekly"]:
-            week_rows.append({"ticker": r["ticker"], "name": SHORT[r["ticker"]], "week": wk, "rel": v})
+        for key, blocks in r["rotation"]["blocks"].items():
+            for end, v in blocks:
+                week_rows.append({"ticker": r["ticker"], "name": SHORT[r["ticker"]], "period": key, "end": end, "rel": v})
 
     def dump(name, rows):
         (DASH / name).write_text(json.dumps(rows, indent=0))
