@@ -1,7 +1,98 @@
 {
- "updated": "2026-11-24T11:29+00:00",
+ "updated": "2026-11-24T11:33+00:00",
  "as_of": "2026-11-23",
  "sample": false,
+ "safe_havens": {
+  "assets": [
+   {
+    "ticker": "SPY",
+    "name": "US large caps (S&P 500)",
+    "group": "Stocks",
+    "ret_4w": -0.0563,
+    "ret_prev_4w": -0.0003
+   },
+   {
+    "ticker": "IWM",
+    "name": "US small caps (Russell 2000)",
+    "group": "Stocks",
+    "ret_4w": -0.0406,
+    "ret_prev_4w": -0.0108
+   },
+   {
+    "ticker": "VEA",
+    "name": "Developed markets (Europe, Japan)",
+    "group": "Stocks",
+    "ret_4w": -0.0541,
+    "ret_prev_4w": -0.0278
+   },
+   {
+    "ticker": "EEM",
+    "name": "Emerging markets (China, India...)",
+    "group": "Stocks",
+    "ret_4w": -0.0645,
+    "ret_prev_4w": -0.0801
+   },
+   {
+    "ticker": "BIL",
+    "name": "Cash (T-bills, money markets)",
+    "group": "Safe",
+    "ret_4w": 0.0029,
+    "ret_prev_4w": 0.003
+   },
+   {
+    "ticker": "IEF",
+    "name": "Treasuries (7-10 yr)",
+    "group": "Safe",
+    "ret_4w": 0.0091,
+    "ret_prev_4w": 0.0213
+   },
+   {
+    "ticker": "TLT",
+    "name": "Treasuries (20+ yr)",
+    "group": "Safe",
+    "ret_4w": 0.0043,
+    "ret_prev_4w": 0.0431
+   },
+   {
+    "ticker": "GLD",
+    "name": "Gold",
+    "group": "Safe",
+    "ret_4w": -0.0946,
+    "ret_prev_4w": -0.0267
+   },
+   {
+    "ticker": "UUP",
+    "name": "US dollar",
+    "group": "Safe",
+    "ret_4w": 0.0265,
+    "ret_prev_4w": 0.0108
+   },
+   {
+    "ticker": "HYG",
+    "name": "Junk bonds",
+    "group": "Other",
+    "ret_4w": -0.0036,
+    "ret_prev_4w": 0.0
+   },
+   {
+    "ticker": "DBC",
+    "name": "Commodities (oil, metals, crops)",
+    "group": "Other",
+    "ret_4w": -0.1382,
+    "ret_prev_4w": 0.0397
+   },
+   {
+    "ticker": "IBIT",
+    "name": "Bitcoin",
+    "group": "Other",
+    "ret_4w": -0.2344,
+    "ret_prev_4w": -0.0422
+   }
+  ],
+  "verdict": "Risk-off: stocks are trailing cash. Safe money is favoring bonds. Junk bonds are lagging Treasuries, an early stress sign.",
+  "mood": "off",
+  "credit_gap": -0.0127
+ },
  "benchmark": {
   "price": 722.29,
   "dd52": -0.0729,
