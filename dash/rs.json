@@ -2,4225 +2,4225 @@
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-05-26",
+"date": "2026-05-27",
 "rs": 100.0
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-05-28",
-"rs": 100.39
+"date": "2026-05-29",
+"rs": 102.75
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-01",
-"rs": 104.63
+"date": "2026-06-02",
+"rs": 106.18
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-03",
-"rs": 105.48
+"date": "2026-06-04",
+"rs": 103.82
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-05",
-"rs": 99.11
+"date": "2026-06-08",
+"rs": 101.38
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-09",
-"rs": 99.43
+"date": "2026-06-10",
+"rs": 99.08
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-11",
-"rs": 100.68
+"date": "2026-06-12",
+"rs": 101.38
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-15",
-"rs": 103.01
+"date": "2026-06-16",
+"rs": 101.11
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-17",
-"rs": 101.66
+"date": "2026-06-18",
+"rs": 104.05
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-22",
-"rs": 104.51
+"date": "2026-06-23",
+"rs": 102.03
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-24",
-"rs": 101.07
+"date": "2026-06-25",
+"rs": 102.14
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-26",
-"rs": 100.58
+"date": "2026-06-29",
+"rs": 101.67
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-06-30",
-"rs": 103.29
+"date": "2026-07-01",
+"rs": 101.14
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-07-02",
-"rs": 98.17
+"date": "2026-07-06",
+"rs": 99.29
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-07-07",
-"rs": 97.02
+"date": "2026-07-08",
+"rs": 98.89
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-07-09",
-"rs": 99.83
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-07-13",
-"rs": 97.97
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-07-15",
-"rs": 97.39
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-07-17",
-"rs": 95.64
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-07-21",
-"rs": 97.81
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-07-23",
-"rs": 97.87
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-07-27",
-"rs": 95.48
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-07-29",
-"rs": 92.45
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-07-31",
-"rs": 95.03
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-08-04",
-"rs": 98.1
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-08-06",
-"rs": 97.63
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-08-10",
-"rs": 97.58
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-08-12",
-"rs": 98.98
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-08-14",
-"rs": 99.09
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-08-18",
-"rs": 97.92
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-08-20",
-"rs": 97.21
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-08-24",
-"rs": 95.48
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-08-26",
-"rs": 96.63
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-08-28",
-"rs": 97.72
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-01",
-"rs": 97.6
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-03",
-"rs": 97.38
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-08",
-"rs": 99.3
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-10",
-"rs": 98.95
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-14",
-"rs": 98.05
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-16",
-"rs": 98.75
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-18",
-"rs": 100.53
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-22",
-"rs": 102.61
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-24",
-"rs": 102.62
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-28",
-"rs": 102.73
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-09-30",
-"rs": 103.78
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-10-02",
-"rs": 104.97
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-10-06",
-"rs": 104.83
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-10-08",
-"rs": 103.33
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-10-12",
-"rs": 102.04
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-10-14",
-"rs": 100.05
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-10-16",
-"rs": 97.19
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-10-20",
-"rs": 97.49
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-10-22",
-"rs": 96.5
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-10-26",
-"rs": 98.43
-},
-{
-"ticker": "XLK",
-"name": "Tech",
-"date": "2026-10-28",
+"date": "2026-07-10",
 "rs": 99.99
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-10-30",
-"rs": 96.04
+"date": "2026-07-14",
+"rs": 99.24
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-11-03",
-"rs": 94.61
+"date": "2026-07-16",
+"rs": 96.09
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-11-05",
-"rs": 89.57
+"date": "2026-07-20",
+"rs": 96.21
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-11-09",
-"rs": 91.79
+"date": "2026-07-22",
+"rs": 98.01
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-11-11",
-"rs": 92.78
+"date": "2026-07-24",
+"rs": 96.72
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-11-13",
-"rs": 91.27
+"date": "2026-07-28",
+"rs": 93.84
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-11-17",
-"rs": 90.12
+"date": "2026-07-30",
+"rs": 96.28
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-11-19",
-"rs": 90.76
+"date": "2026-08-03",
+"rs": 95.48
 },
 {
 "ticker": "XLK",
 "name": "Tech",
-"date": "2026-11-23",
-"rs": 90.9
+"date": "2026-08-05",
+"rs": 98.14
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-08-07",
+"rs": 98.78
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-08-11",
+"rs": 98.13
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-08-13",
+"rs": 99.65
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-08-17",
+"rs": 100.09
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-08-19",
+"rs": 97.03
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-08-21",
+"rs": 97.28
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-08-25",
+"rs": 96.42
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-08-27",
+"rs": 99.39
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-08-31",
+"rs": 98.8
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-09-02",
+"rs": 97.5
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-09-04",
+"rs": 98.81
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-09-09",
+"rs": 100.13
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-09-11",
+"rs": 99.78
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-09-15",
+"rs": 98.58
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-09-17",
+"rs": 100.21
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-09-21",
+"rs": 102.23
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-09-23",
+"rs": 103.24
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-09-25",
+"rs": 103.26
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-09-29",
+"rs": 103.29
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-01",
+"rs": 105.07
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-05",
+"rs": 105.24
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-07",
+"rs": 105.15
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-09",
+"rs": 103.61
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-13",
+"rs": 102.38
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-15",
+"rs": 99.48
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-19",
+"rs": 98.46
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-21",
+"rs": 98.97
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-23",
+"rs": 97.84
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-27",
+"rs": 99.91
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-10-29",
+"rs": 99.55
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-11-02",
+"rs": 94.0
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-11-04",
+"rs": 93.41
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-11-06",
+"rs": 90.92
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-11-10",
+"rs": 91.4
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-11-12",
+"rs": 93.14
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-11-16",
+"rs": 90.36
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-11-18",
+"rs": 91.04
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-11-20",
+"rs": 87.66
+},
+{
+"ticker": "XLK",
+"name": "Tech",
+"date": "2026-11-24",
+"rs": 88.69
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-05-26",
+"date": "2026-05-27",
 "rs": 100.0
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-05-28",
-"rs": 99.18
+"date": "2026-05-29",
+"rs": 98.54
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-01",
-"rs": 97.87
+"date": "2026-06-02",
+"rs": 98.74
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-03",
-"rs": 99.37
+"date": "2026-06-04",
+"rs": 100.18
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-05",
-"rs": 101.7
+"date": "2026-06-08",
+"rs": 101.13
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-09",
-"rs": 102.6
+"date": "2026-06-10",
+"rs": 100.7
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-11",
-"rs": 102.24
+"date": "2026-06-12",
+"rs": 102.27
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-15",
-"rs": 101.94
+"date": "2026-06-16",
+"rs": 103.2
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-17",
-"rs": 104.38
+"date": "2026-06-18",
+"rs": 104.04
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-22",
-"rs": 105.16
+"date": "2026-06-23",
+"rs": 104.55
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-24",
-"rs": 105.82
+"date": "2026-06-25",
+"rs": 107.95
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-26",
-"rs": 107.03
+"date": "2026-06-29",
+"rs": 106.18
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-06-30",
-"rs": 106.8
+"date": "2026-07-01",
+"rs": 105.85
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-02",
-"rs": 106.32
+"date": "2026-07-06",
+"rs": 106.33
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-07",
-"rs": 105.03
+"date": "2026-07-08",
+"rs": 104.2
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-09",
+"date": "2026-07-10",
 "rs": 103.74
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-13",
-"rs": 103.67
+"date": "2026-07-14",
+"rs": 103.33
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-15",
-"rs": 102.72
+"date": "2026-07-16",
+"rs": 103.31
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-17",
-"rs": 103.93
+"date": "2026-07-20",
+"rs": 103.33
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-21",
-"rs": 102.81
+"date": "2026-07-22",
+"rs": 103.02
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-23",
-"rs": 106.13
+"date": "2026-07-24",
+"rs": 106.42
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-27",
-"rs": 106.73
+"date": "2026-07-28",
+"rs": 106.04
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-29",
-"rs": 104.28
+"date": "2026-07-30",
+"rs": 103.54
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-07-31",
-"rs": 103.66
+"date": "2026-08-03",
+"rs": 104.07
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-08-04",
-"rs": 104.05
+"date": "2026-08-05",
+"rs": 104.22
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-08-06",
-"rs": 103.51
+"date": "2026-08-07",
+"rs": 103.1
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-08-10",
+"date": "2026-08-11",
+"rs": 103.75
+},
+{
+"ticker": "XLI",
+"name": "Industrials",
+"date": "2026-08-13",
 "rs": 102.82
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-08-12",
-"rs": 103.61
+"date": "2026-08-17",
+"rs": 103.81
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-08-14",
-"rs": 103.44
+"date": "2026-08-19",
+"rs": 101.85
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-08-18",
-"rs": 102.99
+"date": "2026-08-21",
+"rs": 101.34
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-08-20",
-"rs": 101.5
+"date": "2026-08-25",
+"rs": 100.28
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-08-24",
-"rs": 100.95
+"date": "2026-08-27",
+"rs": 99.82
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-08-26",
-"rs": 101.36
+"date": "2026-08-31",
+"rs": 98.29
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-08-28",
-"rs": 99.14
-},
-{
-"ticker": "XLI",
-"name": "Industrials",
-"date": "2026-09-01",
-"rs": 97.63
-},
-{
-"ticker": "XLI",
-"name": "Industrials",
-"date": "2026-09-03",
+"date": "2026-09-02",
 "rs": 97.21
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-09-08",
-"rs": 98.05
+"date": "2026-09-04",
+"rs": 97.97
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-09-10",
-"rs": 96.9
+"date": "2026-09-09",
+"rs": 97.01
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-09-14",
-"rs": 96.16
+"date": "2026-09-11",
+"rs": 97.09
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-09-16",
-"rs": 96.34
+"date": "2026-09-15",
+"rs": 95.98
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-09-18",
-"rs": 95.72
+"date": "2026-09-17",
+"rs": 95.41
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-09-22",
-"rs": 94.82
+"date": "2026-09-21",
+"rs": 94.63
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-09-24",
-"rs": 94.78
+"date": "2026-09-23",
+"rs": 95.39
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-09-28",
-"rs": 94.94
+"date": "2026-09-25",
+"rs": 95.14
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-09-30",
-"rs": 94.3
+"date": "2026-09-29",
+"rs": 95.3
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-02",
-"rs": 95.1
+"date": "2026-10-01",
+"rs": 95.05
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-06",
-"rs": 94.85
+"date": "2026-10-05",
+"rs": 94.53
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-08",
-"rs": 93.71
+"date": "2026-10-07",
+"rs": 92.99
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-12",
-"rs": 93.62
+"date": "2026-10-09",
+"rs": 93.61
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-14",
-"rs": 93.48
+"date": "2026-10-13",
+"rs": 93.35
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-16",
-"rs": 94.66
+"date": "2026-10-15",
+"rs": 93.67
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-20",
-"rs": 93.41
+"date": "2026-10-19",
+"rs": 93.64
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-22",
-"rs": 93.99
+"date": "2026-10-21",
+"rs": 93.75
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-26",
-"rs": 93.95
+"date": "2026-10-23",
+"rs": 93.27
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-28",
-"rs": 93.96
+"date": "2026-10-27",
+"rs": 93.94
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-10-30",
-"rs": 95.4
+"date": "2026-10-29",
+"rs": 95.22
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-11-03",
-"rs": 97.81
+"date": "2026-11-02",
+"rs": 97.16
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-11-05",
-"rs": 95.46
+"date": "2026-11-04",
+"rs": 95.16
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-11-09",
-"rs": 96.63
+"date": "2026-11-06",
+"rs": 95.26
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-11-11",
-"rs": 96.91
+"date": "2026-11-10",
+"rs": 96.88
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-11-13",
-"rs": 96.36
+"date": "2026-11-12",
+"rs": 96.37
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-11-17",
-"rs": 96.87
+"date": "2026-11-16",
+"rs": 96.4
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-11-19",
-"rs": 97.07
+"date": "2026-11-18",
+"rs": 97.1
 },
 {
 "ticker": "XLI",
 "name": "Industrials",
-"date": "2026-11-23",
-"rs": 96.87
+"date": "2026-11-20",
+"rs": 97.61
+},
+{
+"ticker": "XLI",
+"name": "Industrials",
+"date": "2026-11-24",
+"rs": 96.81
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-05-26",
+"date": "2026-05-27",
 "rs": 100.0
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-05-28",
-"rs": 100.43
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-06-01",
-"rs": 99.0
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-06-03",
-"rs": 96.53
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-06-05",
-"rs": 98.35
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-06-09",
-"rs": 98.25
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-06-11",
+"date": "2026-05-29",
 "rs": 98.72
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-06-15",
-"rs": 96.55
+"date": "2026-06-02",
+"rs": 96.51
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-06-17",
-"rs": 95.73
+"date": "2026-06-04",
+"rs": 96.44
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-06-22",
-"rs": 93.25
+"date": "2026-06-08",
+"rs": 97.01
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-06-24",
+"date": "2026-06-10",
+"rs": 98.78
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-06-12",
+"rs": 97.16
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-06-16",
+"rs": 96.63
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-06-18",
+"rs": 94.37
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-06-23",
 "rs": 94.39
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-06-26",
-"rs": 94.62
+"date": "2026-06-25",
+"rs": 92.81
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-06-30",
-"rs": 93.19
+"date": "2026-06-29",
+"rs": 93.98
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-02",
-"rs": 95.59
+"date": "2026-07-01",
+"rs": 94.99
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-07",
-"rs": 96.45
+"date": "2026-07-06",
+"rs": 94.7
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-09",
-"rs": 95.5
+"date": "2026-07-08",
+"rs": 94.79
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-13",
-"rs": 96.76
+"date": "2026-07-10",
+"rs": 95.46
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-15",
-"rs": 97.58
+"date": "2026-07-14",
+"rs": 95.69
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-17",
-"rs": 96.7
+"date": "2026-07-16",
+"rs": 96.86
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-21",
-"rs": 95.52
+"date": "2026-07-20",
+"rs": 96.38
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-23",
-"rs": 92.73
+"date": "2026-07-22",
+"rs": 94.31
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-27",
-"rs": 94.62
+"date": "2026-07-24",
+"rs": 92.86
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-29",
-"rs": 97.52
+"date": "2026-07-28",
+"rs": 95.56
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-07-31",
+"date": "2026-07-30",
+"rs": 92.76
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-03",
+"rs": 94.86
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-05",
+"rs": 92.97
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-07",
+"rs": 92.87
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-11",
+"rs": 93.21
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-13",
+"rs": 93.4
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-17",
+"rs": 92.58
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-19",
+"rs": 93.44
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-21",
+"rs": 93.91
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-25",
+"rs": 95.39
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-27",
+"rs": 93.27
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-08-31",
+"rs": 93.8
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-09-02",
+"rs": 94.84
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-09-04",
+"rs": 93.9
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-09-09",
+"rs": 93.84
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-09-11",
+"rs": 95.1
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-09-15",
+"rs": 97.19
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-09-17",
+"rs": 95.1
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-09-21",
+"rs": 95.84
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-09-23",
+"rs": 94.71
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-09-25",
+"rs": 94.61
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-09-29",
+"rs": 94.23
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-10-01",
+"rs": 92.97
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-10-05",
+"rs": 93.06
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-10-07",
+"rs": 92.48
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-10-09",
+"rs": 91.59
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-10-13",
+"rs": 93.23
+},
+{
+"ticker": "XLC",
+"name": "Communication",
+"date": "2026-10-15",
 "rs": 94.12
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-08-04",
-"rs": 94.36
+"date": "2026-10-19",
+"rs": 92.79
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-08-06",
-"rs": 93.97
+"date": "2026-10-21",
+"rs": 91.06
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-08-10",
-"rs": 93.97
+"date": "2026-10-23",
+"rs": 89.69
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-08-12",
-"rs": 92.73
+"date": "2026-10-27",
+"rs": 86.94
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-08-14",
-"rs": 94.51
+"date": "2026-10-29",
+"rs": 84.99
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-08-18",
-"rs": 93.51
+"date": "2026-11-02",
+"rs": 86.12
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-08-20",
-"rs": 94.28
+"date": "2026-11-04",
+"rs": 88.43
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-08-24",
-"rs": 95.57
+"date": "2026-11-06",
+"rs": 92.07
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-08-26",
-"rs": 95.49
+"date": "2026-11-10",
+"rs": 92.83
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-08-28",
-"rs": 95.4
+"date": "2026-11-12",
+"rs": 91.78
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-09-01",
-"rs": 94.55
+"date": "2026-11-16",
+"rs": 93.26
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-09-03",
-"rs": 95.26
+"date": "2026-11-18",
+"rs": 93.41
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-09-08",
-"rs": 94.58
+"date": "2026-11-20",
+"rs": 93.68
 },
 {
 "ticker": "XLC",
 "name": "Communication",
-"date": "2026-09-10",
-"rs": 95.58
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-09-14",
-"rs": 98.24
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-09-16",
-"rs": 97.35
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-09-18",
-"rs": 94.27
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-09-22",
-"rs": 95.44
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-09-24",
-"rs": 96.6
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-09-28",
-"rs": 94.41
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-09-30",
-"rs": 94.6
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-02",
-"rs": 93.19
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-06",
-"rs": 93.17
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-08",
-"rs": 94.14
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-12",
-"rs": 93.12
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-14",
-"rs": 93.62
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-16",
-"rs": 93.97
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-20",
-"rs": 93.15
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-22",
-"rs": 91.41
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-26",
-"rs": 88.21
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-28",
-"rs": 86.82
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-10-30",
-"rs": 85.94
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-11-03",
-"rs": 87.42
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-11-05",
-"rs": 92.54
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-11-09",
-"rs": 92.73
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-11-11",
-"rs": 92.92
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-11-13",
-"rs": 93.67
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-11-17",
-"rs": 93.43
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-11-19",
-"rs": 93.32
-},
-{
-"ticker": "XLC",
-"name": "Communication",
-"date": "2026-11-23",
-"rs": 93.25
+"date": "2026-11-24",
+"rs": 93.88
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-05-26",
+"date": "2026-05-27",
 "rs": 100.0
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-05-28",
-"rs": 97.92
+"date": "2026-05-29",
+"rs": 97.99
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-06-01",
-"rs": 98.01
+"date": "2026-06-02",
+"rs": 100.48
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-06-03",
-"rs": 101.0
+"date": "2026-06-04",
+"rs": 102.19
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-06-05",
-"rs": 101.45
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-06-09",
-"rs": 101.03
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-06-11",
-"rs": 100.46
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-06-15",
-"rs": 95.48
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-06-17",
-"rs": 95.73
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-06-22",
-"rs": 94.66
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-06-24",
-"rs": 95.23
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-06-26",
-"rs": 96.27
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-06-30",
-"rs": 92.7
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-02",
-"rs": 93.14
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-07",
-"rs": 95.25
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-09",
-"rs": 95.06
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-13",
-"rs": 98.72
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-15",
-"rs": 97.57
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-17",
-"rs": 101.15
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-21",
-"rs": 101.9
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-23",
-"rs": 104.85
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-27",
-"rs": 102.92
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-29",
-"rs": 104.8
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-07-31",
+"date": "2026-06-08",
 "rs": 103.91
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-08-04",
-"rs": 98.89
+"date": "2026-06-10",
+"rs": 105.74
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-08-06",
-"rs": 98.64
+"date": "2026-06-12",
+"rs": 102.17
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-08-10",
-"rs": 101.47
+"date": "2026-06-16",
+"rs": 97.16
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-08-12",
-"rs": 102.98
+"date": "2026-06-18",
+"rs": 94.58
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-08-14",
-"rs": 103.95
+"date": "2026-06-23",
+"rs": 98.21
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-08-18",
-"rs": 108.16
+"date": "2026-06-25",
+"rs": 97.45
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-08-20",
-"rs": 108.96
+"date": "2026-06-29",
+"rs": 95.66
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-08-24",
-"rs": 107.75
+"date": "2026-07-01",
+"rs": 93.68
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-08-26",
-"rs": 106.22
+"date": "2026-07-06",
+"rs": 93.56
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-08-28",
-"rs": 106.2
+"date": "2026-07-08",
+"rs": 98.68
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-01",
-"rs": 110.83
+"date": "2026-07-10",
+"rs": 96.52
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-03",
-"rs": 108.94
+"date": "2026-07-14",
+"rs": 100.21
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-08",
-"rs": 110.22
+"date": "2026-07-16",
+"rs": 100.48
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-10",
-"rs": 111.68
+"date": "2026-07-20",
+"rs": 103.29
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-14",
-"rs": 110.55
+"date": "2026-07-22",
+"rs": 104.78
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-16",
-"rs": 110.68
+"date": "2026-07-24",
+"rs": 106.74
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-18",
-"rs": 109.78
+"date": "2026-07-28",
+"rs": 102.8
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-22",
-"rs": 104.49
+"date": "2026-07-30",
+"rs": 105.16
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-24",
-"rs": 106.73
+"date": "2026-08-03",
+"rs": 102.65
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-28",
-"rs": 106.09
+"date": "2026-08-05",
+"rs": 98.49
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-09-30",
-"rs": 105.48
+"date": "2026-08-07",
+"rs": 98.37
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-02",
-"rs": 106.76
+"date": "2026-08-11",
+"rs": 104.61
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-06",
-"rs": 107.03
+"date": "2026-08-13",
+"rs": 103.84
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-08",
-"rs": 110.26
+"date": "2026-08-17",
+"rs": 107.15
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-12",
+"date": "2026-08-19",
+"rs": 109.37
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-08-21",
+"rs": 109.95
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-08-25",
+"rs": 107.19
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-08-27",
+"rs": 106.87
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-08-31",
+"rs": 110.31
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-09-02",
+"rs": 112.55
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-09-04",
+"rs": 110.03
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-09-09",
+"rs": 113.33
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-09-11",
+"rs": 112.75
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-09-15",
+"rs": 115.16
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-09-17",
+"rs": 111.86
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-09-21",
+"rs": 107.19
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-09-23",
+"rs": 107.83
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-09-25",
+"rs": 106.77
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-09-29",
+"rs": 106.9
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-10-01",
+"rs": 108.95
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-10-05",
+"rs": 108.71
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-10-07",
+"rs": 108.22
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-10-09",
 "rs": 110.96
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-14",
-"rs": 114.94
+"date": "2026-10-13",
+"rs": 114.66
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-16",
-"rs": 116.94
+"date": "2026-10-15",
+"rs": 114.48
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-20",
-"rs": 115.6
+"date": "2026-10-19",
+"rs": 117.42
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-22",
-"rs": 115.69
+"date": "2026-10-21",
+"rs": 117.04
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-26",
-"rs": 119.01
+"date": "2026-10-23",
+"rs": 121.1
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-28",
-"rs": 115.93
+"date": "2026-10-27",
+"rs": 117.65
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-10-30",
-"rs": 121.19
+"date": "2026-10-29",
+"rs": 118.55
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-11-03",
-"rs": 115.62
+"date": "2026-11-02",
+"rs": 118.7
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-11-05",
-"rs": 109.97
+"date": "2026-11-04",
+"rs": 109.96
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-11-09",
-"rs": 107.64
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-11-11",
-"rs": 109.09
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-11-13",
-"rs": 112.63
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-11-17",
-"rs": 113.15
-},
-{
-"ticker": "XLE",
-"name": "Energy",
-"date": "2026-11-19",
+"date": "2026-11-06",
 "rs": 111.25
 },
 {
 "ticker": "XLE",
 "name": "Energy",
-"date": "2026-11-23",
-"rs": 108.42
+"date": "2026-11-10",
+"rs": 110.12
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-11-12",
+"rs": 112.79
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-11-16",
+"rs": 114.26
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-11-18",
+"rs": 111.42
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-11-20",
+"rs": 116.45
+},
+{
+"ticker": "XLE",
+"name": "Energy",
+"date": "2026-11-24",
+"rs": 111.64
 },
 {
 "ticker": "XLU",
 "name": "Utilities",
-"date": "2026-05-26",
+"date": "2026-05-27",
 "rs": 100.0
 },
 {
 "ticker": "XLU",
 "name": "Utilities",
-"date": "2026-05-28",
-"rs": 97.93
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-01",
-"rs": 94.08
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-03",
-"rs": 95.96
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-05",
-"rs": 99.57
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-09",
-"rs": 98.8
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-11",
-"rs": 98.87
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-15",
-"rs": 98.14
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-17",
-"rs": 99.36
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-22",
-"rs": 99.85
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-24",
-"rs": 103.23
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-26",
-"rs": 105.34
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-06-30",
-"rs": 100.92
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-02",
-"rs": 102.12
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-07",
-"rs": 101.59
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-09",
-"rs": 99.79
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-13",
-"rs": 101.44
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-15",
-"rs": 99.58
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-17",
-"rs": 101.01
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-21",
-"rs": 99.78
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-23",
-"rs": 104.0
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-27",
-"rs": 102.73
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-29",
-"rs": 102.33
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-07-31",
-"rs": 98.68
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-08-04",
-"rs": 95.05
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-08-06",
-"rs": 93.82
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-08-10",
-"rs": 92.74
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-08-12",
-"rs": 94.33
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-08-14",
-"rs": 94.87
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-08-18",
-"rs": 95.34
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-08-20",
-"rs": 95.4
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-08-24",
-"rs": 94.09
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-08-26",
-"rs": 94.4
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-08-28",
-"rs": 92.32
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-01",
-"rs": 92.86
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-03",
-"rs": 92.5
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-08",
-"rs": 94.29
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-10",
-"rs": 93.26
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-14",
-"rs": 91.35
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-16",
-"rs": 91.08
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-18",
-"rs": 89.46
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-22",
-"rs": 87.53
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-24",
-"rs": 85.69
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-28",
-"rs": 85.63
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-09-30",
-"rs": 86.38
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-02",
-"rs": 86.44
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-06",
-"rs": 88.24
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-08",
-"rs": 88.63
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-12",
-"rs": 89.36
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-14",
-"rs": 90.54
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-16",
-"rs": 92.37
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-20",
-"rs": 90.95
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-22",
-"rs": 93.72
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-26",
-"rs": 92.85
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-28",
-"rs": 91.89
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-10-30",
-"rs": 95.98
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-11-03",
-"rs": 96.14
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-11-05",
-"rs": 98.66
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-11-09",
-"rs": 97.17
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-11-11",
-"rs": 96.32
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-11-13",
-"rs": 97.51
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-11-17",
-"rs": 99.01
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-11-19",
-"rs": 100.35
-},
-{
-"ticker": "XLU",
-"name": "Utilities",
-"date": "2026-11-23",
-"rs": 100.17
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-05-26",
-"rs": 100.0
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-05-28",
-"rs": 101.64
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-01",
-"rs": 97.91
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-03",
-"rs": 97.25
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-05",
-"rs": 97.86
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-09",
-"rs": 98.78
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-11",
-"rs": 99.06
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-15",
-"rs": 98.71
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-17",
-"rs": 97.94
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-22",
-"rs": 96.97
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-24",
-"rs": 98.56
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-26",
-"rs": 98.53
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-06-30",
-"rs": 98.63
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-02",
-"rs": 98.76
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-07",
-"rs": 98.6
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-09",
+"date": "2026-05-29",
 "rs": 97.62
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-13",
-"rs": 97.27
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-15",
-"rs": 97.34
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-17",
-"rs": 97.54
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-21",
-"rs": 96.41
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-23",
-"rs": 92.53
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-27",
-"rs": 94.18
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-29",
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-06-02",
 "rs": 96.09
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-07-31",
-"rs": 97.59
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-06-04",
+"rs": 96.49
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-08-04",
-"rs": 96.31
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-06-08",
+"rs": 97.88
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-08-06",
-"rs": 96.5
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-06-10",
+"rs": 100.84
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-08-10",
-"rs": 97.22
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-06-12",
+"rs": 99.81
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-08-12",
-"rs": 95.84
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-06-16",
+"rs": 99.84
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-08-14",
-"rs": 95.62
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-06-18",
+"rs": 99.4
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-08-18",
-"rs": 95.22
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-06-23",
+"rs": 102.53
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-08-20",
-"rs": 96.09
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-06-25",
+"rs": 104.2
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-08-24",
-"rs": 97.31
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-06-29",
+"rs": 103.64
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-08-26",
-"rs": 96.04
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-01",
+"rs": 100.18
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-08-28",
-"rs": 95.68
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-06",
+"rs": 100.63
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-01",
-"rs": 94.47
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-08",
+"rs": 101.55
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-03",
-"rs": 94.59
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-08",
-"rs": 93.46
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-10",
-"rs": 92.78
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-14",
-"rs": 93.14
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-16",
-"rs": 91.76
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-18",
-"rs": 91.32
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-22",
-"rs": 91.19
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-24",
-"rs": 90.28
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-28",
-"rs": 89.38
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-09-30",
-"rs": 89.6
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-02",
-"rs": 89.76
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-06",
-"rs": 90.03
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-08",
-"rs": 90.62
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-12",
-"rs": 90.59
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-14",
-"rs": 90.96
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-16",
-"rs": 92.51
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-20",
-"rs": 94.29
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-22",
-"rs": 94.52
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-26",
-"rs": 93.73
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-28",
-"rs": 93.75
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-10-30",
-"rs": 95.85
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-11-03",
-"rs": 97.65
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-11-05",
-"rs": 100.76
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-11-09",
-"rs": 100.94
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-11-11",
-"rs": 99.97
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-11-13",
-"rs": 99.85
-},
-{
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-11-17",
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-10",
 "rs": 100.38
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-11-19",
-"rs": 101.63
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-14",
+"rs": 101.42
 },
 {
-"ticker": "XLY",
-"name": "Discretionary",
-"date": "2026-11-23",
-"rs": 101.64
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-16",
+"rs": 101.08
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-20",
+"rs": 101.06
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-22",
+"rs": 102.55
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-24",
+"rs": 104.54
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-28",
+"rs": 102.54
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-07-30",
+"rs": 100.49
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-03",
+"rs": 97.71
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-05",
+"rs": 94.65
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-07",
+"rs": 94.12
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-11",
+"rs": 94.49
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-13",
+"rs": 94.48
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-17",
+"rs": 95.42
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-19",
+"rs": 95.52
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-21",
+"rs": 93.21
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-25",
+"rs": 94.37
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-27",
+"rs": 93.45
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-08-31",
+"rs": 91.88
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-09-02",
+"rs": 93.06
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-09-04",
+"rs": 93.34
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-09-09",
+"rs": 93.99
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-09-11",
+"rs": 92.56
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-09-15",
+"rs": 91.04
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-09-17",
+"rs": 91.23
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-09-21",
+"rs": 88.15
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-09-23",
+"rs": 86.82
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-09-25",
+"rs": 85.9
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-09-29",
+"rs": 87.14
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-01",
+"rs": 87.1
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-05",
+"rs": 86.51
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-07",
+"rs": 88.79
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-09",
+"rs": 89.19
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-13",
+"rs": 90.25
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-15",
+"rs": 90.5
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-19",
+"rs": 90.49
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-21",
+"rs": 91.1
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-23",
+"rs": 93.91
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-27",
+"rs": 93.36
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-10-29",
+"rs": 94.03
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-11-02",
+"rs": 97.37
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-11-04",
+"rs": 95.37
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-11-06",
+"rs": 98.36
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-11-10",
+"rs": 97.79
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-11-12",
+"rs": 97.03
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-11-16",
+"rs": 99.99
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-11-18",
+"rs": 100.01
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-11-20",
+"rs": 103.78
+},
+{
+"ticker": "XLU",
+"name": "Utilities",
+"date": "2026-11-24",
+"rs": 101.25
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-05-26",
+"date": "2026-05-27",
 "rs": 100.0
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-05-28",
-"rs": 100.19
+"date": "2026-05-29",
+"rs": 99.15
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-01",
-"rs": 98.82
+"date": "2026-06-02",
+"rs": 99.46
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-03",
-"rs": 100.77
+"date": "2026-06-04",
+"rs": 99.98
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-05",
-"rs": 101.05
+"date": "2026-06-08",
+"rs": 99.1
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-09",
-"rs": 101.4
+"date": "2026-06-10",
+"rs": 100.26
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-11",
-"rs": 102.2
+"date": "2026-06-12",
+"rs": 103.15
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-15",
-"rs": 102.38
+"date": "2026-06-16",
+"rs": 103.03
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-17",
-"rs": 103.35
+"date": "2026-06-18",
+"rs": 101.47
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-22",
-"rs": 102.2
+"date": "2026-06-23",
+"rs": 101.8
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-24",
-"rs": 102.83
+"date": "2026-06-25",
+"rs": 103.64
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-26",
-"rs": 104.32
+"date": "2026-06-29",
+"rs": 100.36
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-06-30",
-"rs": 100.31
+"date": "2026-07-01",
+"rs": 100.43
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-02",
-"rs": 102.92
+"date": "2026-07-06",
+"rs": 101.57
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-07",
-"rs": 101.53
+"date": "2026-07-08",
+"rs": 98.79
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-09",
-"rs": 98.54
+"date": "2026-07-10",
+"rs": 98.96
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-13",
-"rs": 99.5
+"date": "2026-07-14",
+"rs": 98.88
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-15",
-"rs": 98.6
+"date": "2026-07-16",
+"rs": 99.51
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-17",
-"rs": 100.19
+"date": "2026-07-20",
+"rs": 98.97
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-21",
-"rs": 98.67
+"date": "2026-07-22",
+"rs": 99.82
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-23",
-"rs": 100.4
+"date": "2026-07-24",
+"rs": 101.84
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-27",
-"rs": 102.47
+"date": "2026-07-28",
+"rs": 103.71
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-29",
-"rs": 104.53
+"date": "2026-07-30",
+"rs": 102.21
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-07-31",
-"rs": 99.49
+"date": "2026-08-03",
+"rs": 98.83
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-08-04",
-"rs": 99.35
+"date": "2026-08-05",
+"rs": 100.39
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-08-06",
-"rs": 100.04
+"date": "2026-08-07",
+"rs": 100.35
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-08-10",
-"rs": 101.38
+"date": "2026-08-11",
+"rs": 101.43
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-08-12",
-"rs": 100.31
+"date": "2026-08-13",
+"rs": 98.72
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-08-14",
-"rs": 99.74
+"date": "2026-08-17",
+"rs": 99.25
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-08-18",
-"rs": 99.43
+"date": "2026-08-19",
+"rs": 100.25
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-08-20",
-"rs": 101.3
+"date": "2026-08-21",
+"rs": 102.65
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-08-24",
-"rs": 103.43
+"date": "2026-08-25",
+"rs": 102.7
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-08-26",
-"rs": 103.25
+"date": "2026-08-27",
+"rs": 101.34
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-08-28",
-"rs": 101.87
+"date": "2026-08-31",
+"rs": 100.84
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-09-01",
-"rs": 100.73
+"date": "2026-09-02",
+"rs": 101.59
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-09-03",
-"rs": 100.3
+"date": "2026-09-04",
+"rs": 99.95
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-09-08",
-"rs": 99.93
+"date": "2026-09-09",
+"rs": 98.95
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-09-10",
-"rs": 98.71
+"date": "2026-09-11",
+"rs": 97.86
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-09-14",
+"date": "2026-09-15",
+"rs": 98.33
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-09-17",
+"rs": 97.62
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-09-21",
+"rs": 94.54
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-09-23",
+"rs": 96.34
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-09-25",
+"rs": 94.98
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-09-29",
+"rs": 94.52
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-10-01",
+"rs": 93.47
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-10-05",
+"rs": 93.98
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-10-07",
+"rs": 92.71
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-10-09",
+"rs": 93.4
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-10-13",
+"rs": 94.01
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-10-15",
+"rs": 96.37
+},
+{
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-10-19",
 "rs": 97.79
 },
 {
 "ticker": "XLB",
 "name": "Materials",
-"date": "2026-09-16",
-"rs": 98.43
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-09-18",
-"rs": 96.48
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-09-22",
-"rs": 96.49
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-09-24",
-"rs": 95.64
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-09-28",
-"rs": 95.43
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-09-30",
-"rs": 94.31
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-02",
-"rs": 93.76
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-06",
-"rs": 94.27
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-08",
-"rs": 94.02
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-12",
-"rs": 93.84
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-14",
-"rs": 95.32
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-16",
-"rs": 98.53
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-20",
-"rs": 98.38
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-22",
-"rs": 99.92
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-26",
-"rs": 99.14
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-28",
-"rs": 99.17
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-10-30",
-"rs": 103.07
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-11-03",
-"rs": 102.96
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-11-05",
-"rs": 105.44
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-11-09",
-"rs": 103.87
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-11-11",
-"rs": 103.06
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-11-13",
-"rs": 102.25
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-11-17",
-"rs": 102.51
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-11-19",
-"rs": 101.95
-},
-{
-"ticker": "XLB",
-"name": "Materials",
-"date": "2026-11-23",
-"rs": 102.03
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-05-26",
-"rs": 100.0
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-05-28",
-"rs": 101.06
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-01",
-"rs": 98.51
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-03",
-"rs": 98.87
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-05",
-"rs": 104.85
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-09",
-"rs": 105.99
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-11",
-"rs": 105.56
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-15",
-"rs": 102.37
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-17",
-"rs": 102.8
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-22",
-"rs": 102.07
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-24",
-"rs": 105.9
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-26",
-"rs": 111.37
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-06-30",
-"rs": 107.58
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-02",
-"rs": 111.32
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-07",
-"rs": 111.36
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-09",
-"rs": 109.23
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-13",
-"rs": 109.09
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-15",
-"rs": 106.18
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-17",
-"rs": 109.74
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-21",
-"rs": 108.44
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-23",
-"rs": 110.74
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-27",
-"rs": 111.94
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-29",
-"rs": 115.39
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-07-31",
-"rs": 110.18
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-08-04",
-"rs": 106.41
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-08-06",
-"rs": 108.34
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-08-10",
-"rs": 110.33
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-08-12",
-"rs": 110.41
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-08-14",
-"rs": 109.16
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-08-18",
-"rs": 111.98
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-08-20",
-"rs": 114.46
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-08-24",
-"rs": 115.86
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-08-26",
-"rs": 114.7
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-08-28",
-"rs": 112.65
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-01",
-"rs": 114.11
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-03",
-"rs": 113.47
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-08",
-"rs": 110.48
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-10",
-"rs": 110.68
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-14",
-"rs": 111.63
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-16",
-"rs": 112.66
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-18",
-"rs": 111.66
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-22",
-"rs": 111.38
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-24",
-"rs": 112.26
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-28",
-"rs": 113.42
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-09-30",
-"rs": 111.97
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-02",
-"rs": 109.47
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-06",
-"rs": 108.74
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-08",
-"rs": 110.17
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-12",
-"rs": 112.07
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-14",
-"rs": 114.61
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-16",
-"rs": 117.39
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-20",
-"rs": 118.55
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-22",
-"rs": 120.32
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-26",
-"rs": 118.76
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-28",
-"rs": 117.99
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-10-30",
-"rs": 124.03
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-11-03",
-"rs": 123.68
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-11-05",
-"rs": 127.9
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-11-09",
-"rs": 126.86
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-11-11",
-"rs": 126.09
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-11-13",
-"rs": 126.93
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-11-17",
-"rs": 128.23
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-11-19",
-"rs": 125.69
-},
-{
-"ticker": "XLV",
-"name": "Health Care",
-"date": "2026-11-23",
-"rs": 125.95
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-05-26",
-"rs": 100.0
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-05-28",
-"rs": 98.8
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-01",
-"rs": 95.76
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-03",
-"rs": 96.85
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-05",
-"rs": 101.75
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-09",
-"rs": 102.43
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-11",
-"rs": 102.22
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-15",
-"rs": 100.06
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-17",
-"rs": 99.62
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-22",
-"rs": 99.89
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-24",
-"rs": 102.54
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-26",
-"rs": 104.83
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-06-30",
-"rs": 99.59
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-02",
-"rs": 101.33
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-07",
-"rs": 101.41
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-09",
-"rs": 99.39
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-13",
-"rs": 100.79
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-15",
-"rs": 99.72
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-17",
-"rs": 103.22
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-21",
-"rs": 102.03
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-23",
-"rs": 102.86
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-27",
-"rs": 104.58
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-29",
-"rs": 106.43
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-07-31",
-"rs": 101.91
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-08-04",
-"rs": 98.92
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-08-06",
-"rs": 98.48
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-08-10",
-"rs": 97.02
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-08-12",
-"rs": 97.28
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-08-14",
-"rs": 98.5
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-08-18",
-"rs": 98.23
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-08-20",
-"rs": 99.85
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-08-24",
-"rs": 100.29
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-08-26",
-"rs": 99.42
-},
-{
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-08-28",
+"date": "2026-10-21",
 "rs": 97.66
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-01",
-"rs": 97.65
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-10-23",
+"rs": 99.32
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-03",
-"rs": 96.67
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-10-27",
+"rs": 98.97
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-08",
-"rs": 96.81
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-10-29",
+"rs": 100.44
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-10",
-"rs": 95.96
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-11-02",
+"rs": 104.98
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-14",
-"rs": 95.73
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-11-04",
+"rs": 103.41
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-16",
-"rs": 95.9
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-11-06",
+"rs": 103.94
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-18",
-"rs": 94.08
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-11-10",
+"rs": 103.68
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-22",
-"rs": 93.37
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-11-12",
+"rs": 101.7
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-24",
-"rs": 92.25
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-11-16",
+"rs": 102.33
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-28",
-"rs": 91.77
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-11-18",
+"rs": 101.66
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-09-30",
-"rs": 91.15
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-11-20",
+"rs": 103.09
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-02",
-"rs": 90.1
+"ticker": "XLB",
+"name": "Materials",
+"date": "2026-11-24",
+"rs": 102.68
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-06",
-"rs": 89.64
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-05-27",
+"rs": 100.0
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-08",
-"rs": 89.69
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-05-29",
+"rs": 98.65
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-12",
-"rs": 91.54
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-06-02",
+"rs": 95.58
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-14",
-"rs": 91.6
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-06-04",
+"rs": 95.63
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-16",
-"rs": 93.86
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-06-08",
+"rs": 96.38
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-20",
-"rs": 93.64
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-06-10",
+"rs": 96.59
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-22",
-"rs": 94.57
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-06-12",
+"rs": 97.05
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-26",
-"rs": 95.02
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-06-16",
+"rs": 97.47
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-28",
-"rs": 92.69
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-06-18",
+"rs": 96.62
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-10-30",
-"rs": 97.06
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-06-23",
+"rs": 95.69
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-11-03",
-"rs": 98.37
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-06-25",
+"rs": 95.25
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-11-05",
-"rs": 102.69
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-06-29",
+"rs": 97.53
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-11-09",
-"rs": 100.77
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-01",
+"rs": 97.71
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-11-11",
-"rs": 99.72
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-06",
+"rs": 96.93
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-11-13",
-"rs": 99.94
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-08",
+"rs": 95.45
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-11-17",
-"rs": 101.12
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-10",
+"rs": 95.82
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-11-19",
-"rs": 101.78
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-14",
+"rs": 95.12
 },
 {
-"ticker": "XLRE",
-"name": "Real Estate",
-"date": "2026-11-23",
-"rs": 100.92
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-16",
+"rs": 96.45
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-20",
+"rs": 95.3
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-22",
+"rs": 94.13
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-24",
+"rs": 91.36
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-28",
+"rs": 93.68
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-07-30",
+"rs": 93.5
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-03",
+"rs": 96.27
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-05",
+"rs": 95.1
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-07",
+"rs": 95.65
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-11",
+"rs": 95.49
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-13",
+"rs": 93.96
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-17",
+"rs": 93.24
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-19",
+"rs": 95.15
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-21",
+"rs": 95.11
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-25",
+"rs": 95.03
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-27",
+"rs": 92.73
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-08-31",
+"rs": 93.79
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-09-02",
+"rs": 92.63
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-09-04",
+"rs": 92.06
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-09-09",
+"rs": 91.02
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-09-11",
+"rs": 91.2
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-09-15",
+"rs": 90.33
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-09-17",
+"rs": 90.13
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-09-21",
+"rs": 89.5
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-09-23",
+"rs": 88.9
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-09-25",
+"rs": 88.42
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-09-29",
+"rs": 88.11
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-01",
+"rs": 87.86
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-05",
+"rs": 87.91
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-07",
+"rs": 88.39
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-09",
+"rs": 89.41
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-13",
+"rs": 89.09
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-15",
+"rs": 90.65
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-19",
+"rs": 92.12
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-21",
+"rs": 92.19
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-23",
+"rs": 91.8
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-27",
+"rs": 92.53
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-10-29",
+"rs": 93.17
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-11-02",
+"rs": 96.92
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-11-04",
+"rs": 98.41
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-11-06",
+"rs": 98.64
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-11-10",
+"rs": 99.57
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-11-12",
+"rs": 98.15
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-11-16",
+"rs": 98.5
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-11-18",
+"rs": 100.7
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-11-20",
+"rs": 100.57
+},
+{
+"ticker": "XLY",
+"name": "Discretionary",
+"date": "2026-11-24",
+"rs": 101.03
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-05-26",
+"date": "2026-05-27",
 "rs": 100.0
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-05-28",
-"rs": 98.36
+"date": "2026-05-29",
+"rs": 99.51
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-01",
-"rs": 98.15
+"date": "2026-06-02",
+"rs": 98.88
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-03",
-"rs": 97.64
+"date": "2026-06-04",
+"rs": 100.61
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-05",
-"rs": 102.65
+"date": "2026-06-08",
+"rs": 102.61
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-09",
-"rs": 103.04
+"date": "2026-06-10",
+"rs": 105.08
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-11",
-"rs": 103.25
+"date": "2026-06-12",
+"rs": 104.95
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-15",
-"rs": 102.72
+"date": "2026-06-16",
+"rs": 105.72
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-17",
-"rs": 105.6
+"date": "2026-06-18",
+"rs": 104.43
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-22",
-"rs": 104.53
+"date": "2026-06-23",
+"rs": 107.29
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-24",
-"rs": 106.16
+"date": "2026-06-25",
+"rs": 106.33
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-26",
-"rs": 106.48
+"date": "2026-06-29",
+"rs": 105.9
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-06-30",
-"rs": 104.02
+"date": "2026-07-01",
+"rs": 107.3
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-02",
-"rs": 108.21
+"date": "2026-07-06",
+"rs": 109.16
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-07",
-"rs": 108.62
+"date": "2026-07-08",
+"rs": 107.73
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-09",
-"rs": 107.06
+"date": "2026-07-10",
+"rs": 107.8
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-13",
-"rs": 108.44
+"date": "2026-07-14",
+"rs": 109.16
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-15",
-"rs": 108.57
+"date": "2026-07-16",
+"rs": 110.43
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-17",
-"rs": 109.67
+"date": "2026-07-20",
+"rs": 110.32
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-21",
-"rs": 108.65
+"date": "2026-07-22",
+"rs": 109.55
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-23",
-"rs": 109.59
+"date": "2026-07-24",
+"rs": 111.32
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-27",
-"rs": 111.51
+"date": "2026-07-28",
+"rs": 113.58
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-29",
-"rs": 112.59
+"date": "2026-07-30",
+"rs": 112.27
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-07-31",
-"rs": 110.44
+"date": "2026-08-03",
+"rs": 110.63
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-08-04",
-"rs": 108.73
+"date": "2026-08-05",
+"rs": 110.07
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-08-06",
-"rs": 108.99
+"date": "2026-08-07",
+"rs": 108.82
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-08-10",
-"rs": 108.36
+"date": "2026-08-11",
+"rs": 109.58
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-08-12",
-"rs": 108.64
+"date": "2026-08-13",
+"rs": 109.41
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-08-14",
-"rs": 108.55
+"date": "2026-08-17",
+"rs": 108.86
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-08-18",
-"rs": 109.2
+"date": "2026-08-19",
+"rs": 109.18
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-08-20",
-"rs": 108.21
+"date": "2026-08-21",
+"rs": 109.66
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-08-24",
-"rs": 110.49
+"date": "2026-08-25",
+"rs": 111.21
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-08-26",
-"rs": 110.19
+"date": "2026-08-27",
+"rs": 109.65
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-08-28",
+"date": "2026-08-31",
+"rs": 109.91
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-09-02",
+"rs": 110.08
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-09-04",
+"rs": 110.2
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-09-09",
+"rs": 109.33
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-09-11",
 "rs": 109.42
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-09-01",
-"rs": 108.8
+"date": "2026-09-15",
+"rs": 109.65
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-09-03",
-"rs": 109.74
+"date": "2026-09-17",
+"rs": 107.04
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-09-08",
-"rs": 108.39
+"date": "2026-09-21",
+"rs": 105.68
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-09-10",
-"rs": 108.73
+"date": "2026-09-23",
+"rs": 103.88
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-09-14",
-"rs": 108.6
+"date": "2026-09-25",
+"rs": 103.97
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-09-16",
-"rs": 107.47
+"date": "2026-09-29",
+"rs": 103.35
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-09-18",
+"date": "2026-10-01",
+"rs": 102.33
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-10-05",
+"rs": 101.69
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-10-07",
+"rs": 101.13
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-10-09",
+"rs": 102.8
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-10-13",
+"rs": 103.04
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-10-15",
+"rs": 104.72
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-10-19",
+"rs": 105.05
+},
+{
+"ticker": "XLF",
+"name": "Financials",
+"date": "2026-10-21",
 "rs": 106.0
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-09-22",
-"rs": 102.78
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-09-24",
-"rs": 103.1
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-09-28",
-"rs": 102.67
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-09-30",
-"rs": 101.56
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-10-02",
-"rs": 100.81
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-10-06",
-"rs": 100.55
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-10-08",
-"rs": 101.64
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-10-12",
-"rs": 102.62
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-10-14",
-"rs": 102.76
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-10-16",
-"rs": 105.51
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-10-20",
-"rs": 105.09
-},
-{
-"ticker": "XLF",
-"name": "Financials",
-"date": "2026-10-22",
+"date": "2026-10-23",
 "rs": 107.56
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-10-26",
+"date": "2026-10-27",
 "rs": 106.17
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-10-28",
-"rs": 105.42
+"date": "2026-10-29",
+"rs": 108.23
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-10-30",
-"rs": 108.46
+"date": "2026-11-02",
+"rs": 111.92
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-11-03",
-"rs": 109.97
+"date": "2026-11-04",
+"rs": 112.9
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-11-05",
-"rs": 113.78
+"date": "2026-11-06",
+"rs": 113.68
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-11-09",
-"rs": 111.75
+"date": "2026-11-10",
+"rs": 113.67
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-11-11",
-"rs": 111.93
+"date": "2026-11-12",
+"rs": 112.43
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-11-13",
-"rs": 112.83
+"date": "2026-11-16",
+"rs": 114.98
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-11-17",
-"rs": 113.02
+"date": "2026-11-18",
+"rs": 112.99
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-11-19",
-"rs": 112.62
+"date": "2026-11-20",
+"rs": 115.69
 },
 {
 "ticker": "XLF",
 "name": "Financials",
-"date": "2026-11-23",
-"rs": 111.75
+"date": "2026-11-24",
+"rs": 114.16
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-05-27",
+"rs": 100.0
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-05-29",
+"rs": 97.78
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-06-02",
+"rs": 96.28
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-06-04",
+"rs": 98.61
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-06-08",
+"rs": 100.16
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-06-10",
+"rs": 104.28
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-06-12",
+"rs": 102.83
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-06-16",
+"rs": 101.07
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-06-18",
+"rs": 98.51
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-06-23",
+"rs": 102.96
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-06-25",
+"rs": 102.74
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-06-29",
+"rs": 102.56
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-01",
+"rs": 100.23
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-06",
+"rs": 99.74
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-08",
+"rs": 100.21
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-10",
+"rs": 99.62
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-14",
+"rs": 100.1
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-16",
+"rs": 102.45
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-20",
+"rs": 103.12
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-22",
+"rs": 101.89
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-24",
+"rs": 105.21
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-28",
+"rs": 105.07
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-07-30",
+"rs": 103.34
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-03",
+"rs": 100.89
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-05",
+"rs": 99.34
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-07",
+"rs": 98.42
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-11",
+"rs": 96.78
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-13",
+"rs": 98.14
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-17",
+"rs": 98.16
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-19",
+"rs": 98.98
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-21",
+"rs": 99.61
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-25",
+"rs": 100.2
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-27",
+"rs": 97.99
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-08-31",
+"rs": 97.29
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-09-02",
+"rs": 96.69
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-09-04",
+"rs": 96.5
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-09-09",
+"rs": 96.33
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-09-11",
+"rs": 96.12
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-09-15",
+"rs": 96.21
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-09-17",
+"rs": 95.27
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-09-21",
+"rs": 93.71
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-09-23",
+"rs": 92.74
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-09-25",
+"rs": 91.7
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-09-29",
+"rs": 92.07
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-01",
+"rs": 90.62
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-05",
+"rs": 89.33
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-07",
+"rs": 88.84
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-09",
+"rs": 90.96
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-13",
+"rs": 91.5
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-15",
+"rs": 92.59
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-19",
+"rs": 92.52
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-21",
+"rs": 92.59
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-23",
+"rs": 95.33
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-27",
+"rs": 93.85
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-10-29",
+"rs": 95.25
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-11-02",
+"rs": 98.75
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-11-04",
+"rs": 100.14
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-11-06",
+"rs": 101.84
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-11-10",
+"rs": 101.17
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-11-12",
+"rs": 99.72
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-11-16",
+"rs": 101.78
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-11-18",
+"rs": 101.67
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-11-20",
+"rs": 104.76
+},
+{
+"ticker": "XLRE",
+"name": "Real Estate",
+"date": "2026-11-24",
+"rs": 102.9
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-05-27",
+"rs": 100.0
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-05-29",
+"rs": 99.66
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-06-02",
+"rs": 97.21
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-06-04",
+"rs": 101.32
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-06-08",
+"rs": 104.15
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-06-10",
+"rs": 106.27
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-06-12",
+"rs": 104.59
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-06-16",
+"rs": 102.81
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-06-18",
+"rs": 100.65
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-06-23",
+"rs": 104.82
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-06-25",
+"rs": 107.09
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-06-29",
+"rs": 109.61
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-01",
+"rs": 108.1
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-06",
+"rs": 108.93
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-08",
+"rs": 110.02
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-10",
+"rs": 107.65
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-14",
+"rs": 106.39
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-16",
+"rs": 108.91
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-20",
+"rs": 108.44
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-22",
+"rs": 107.79
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-24",
+"rs": 111.17
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-28",
+"rs": 114.08
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-07-30",
+"rs": 111.4
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-03",
+"rs": 108.2
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-05",
+"rs": 107.76
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-07",
+"rs": 108.27
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-11",
+"rs": 110.17
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-13",
+"rs": 109.38
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-17",
+"rs": 109.24
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-19",
+"rs": 115.43
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-21",
+"rs": 115.23
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-25",
+"rs": 115.65
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-27",
+"rs": 112.44
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-08-31",
+"rs": 112.34
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-09-02",
+"rs": 114.21
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-09-04",
+"rs": 112.48
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-09-09",
+"rs": 110.4
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-09-11",
+"rs": 109.33
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-09-15",
+"rs": 111.86
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-09-17",
+"rs": 111.85
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-09-21",
+"rs": 110.56
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-09-23",
+"rs": 111.24
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-09-25",
+"rs": 111.97
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-09-29",
+"rs": 113.04
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-01",
+"rs": 110.07
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-05",
+"rs": 109.3
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-07",
+"rs": 109.9
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-09",
+"rs": 111.01
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-13",
+"rs": 110.34
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-15",
+"rs": 116.16
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-19",
+"rs": 115.95
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-21",
+"rs": 117.11
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-23",
+"rs": 119.36
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-27",
+"rs": 117.79
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-10-29",
+"rs": 121.04
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-11-02",
+"rs": 124.19
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-11-04",
+"rs": 125.15
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-11-06",
+"rs": 127.17
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-11-10",
+"rs": 127.44
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-11-12",
+"rs": 125.52
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-11-16",
+"rs": 128.47
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-11-18",
+"rs": 125.54
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-11-20",
+"rs": 130.01
+},
+{
+"ticker": "XLV",
+"name": "Health Care",
+"date": "2026-11-24",
+"rs": 130.03
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-05-26",
+"date": "2026-05-27",
 "rs": 100.0
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-05-28",
-"rs": 100.42
+"date": "2026-05-29",
+"rs": 97.25
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-06-01",
-"rs": 97.06
+"date": "2026-06-02",
+"rs": 95.59
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-06-03",
-"rs": 97.77
+"date": "2026-06-04",
+"rs": 96.15
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-06-05",
-"rs": 101.54
+"date": "2026-06-08",
+"rs": 99.71
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-06-09",
-"rs": 102.41
+"date": "2026-06-10",
+"rs": 104.56
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-06-11",
-"rs": 103.73
+"date": "2026-06-12",
+"rs": 102.66
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-06-15",
-"rs": 101.64
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-06-17",
-"rs": 101.36
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-06-22",
-"rs": 99.52
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-06-24",
-"rs": 103.81
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-06-26",
-"rs": 104.75
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-06-30",
-"rs": 100.27
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-02",
-"rs": 102.86
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-07",
-"rs": 102.3
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-09",
-"rs": 99.77
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-13",
-"rs": 101.78
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-15",
-"rs": 99.68
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-17",
-"rs": 103.31
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-21",
-"rs": 101.26
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-23",
-"rs": 101.61
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-27",
-"rs": 104.11
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-29",
-"rs": 107.95
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-07-31",
-"rs": 102.63
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-08-04",
-"rs": 99.77
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-08-06",
-"rs": 99.82
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-08-10",
-"rs": 99.06
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-08-12",
-"rs": 99.28
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-08-14",
-"rs": 99.96
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-08-18",
-"rs": 100.52
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-08-20",
-"rs": 100.85
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-08-24",
-"rs": 103.25
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-08-26",
-"rs": 101.51
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-08-28",
-"rs": 100.12
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-01",
-"rs": 100.88
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-03",
-"rs": 99.4
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-08",
-"rs": 98.88
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-10",
-"rs": 98.83
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-14",
-"rs": 100.01
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-16",
-"rs": 99.62
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-18",
-"rs": 97.75
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-22",
-"rs": 96.82
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-24",
-"rs": 96.39
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-28",
-"rs": 97.27
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-09-30",
-"rs": 95.66
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-10-02",
-"rs": 94.7
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-10-06",
-"rs": 95.03
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-10-08",
-"rs": 97.56
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-10-12",
-"rs": 98.19
-},
-{
-"ticker": "XLP",
-"name": "Staples",
-"date": "2026-10-14",
+"date": "2026-06-16",
 "rs": 101.21
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-10-16",
-"rs": 103.9
+"date": "2026-06-18",
+"rs": 98.72
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-10-20",
-"rs": 103.27
+"date": "2026-06-23",
+"rs": 101.7
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-10-22",
-"rs": 106.62
+"date": "2026-06-25",
+"rs": 101.87
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-10-26",
-"rs": 104.02
+"date": "2026-06-29",
+"rs": 101.46
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-10-28",
-"rs": 101.77
+"date": "2026-07-01",
+"rs": 99.54
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-10-30",
-"rs": 107.1
+"date": "2026-07-06",
+"rs": 99.76
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-11-03",
-"rs": 106.73
+"date": "2026-07-08",
+"rs": 100.89
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-11-05",
-"rs": 112.67
+"date": "2026-07-10",
+"rs": 99.29
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-11-09",
-"rs": 109.29
+"date": "2026-07-14",
+"rs": 98.88
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-11-11",
-"rs": 108.94
+"date": "2026-07-16",
+"rs": 101.86
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-11-13",
-"rs": 110.8
+"date": "2026-07-20",
+"rs": 101.9
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-11-17",
-"rs": 113.02
+"date": "2026-07-22",
+"rs": 100.61
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-11-19",
-"rs": 113.61
+"date": "2026-07-24",
+"rs": 101.46
 },
 {
 "ticker": "XLP",
 "name": "Staples",
-"date": "2026-11-23",
-"rs": 113.25
+"date": "2026-07-28",
+"rs": 104.72
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-07-30",
+"rs": 102.69
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-03",
+"rs": 99.81
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-05",
+"rs": 98.78
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-07",
+"rs": 98.1
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-11",
+"rs": 97.94
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-13",
+"rs": 98.52
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-17",
+"rs": 97.66
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-19",
+"rs": 100.28
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-21",
+"rs": 100.07
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-25",
+"rs": 100.67
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-27",
+"rs": 98.32
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-08-31",
+"rs": 98.73
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-09-02",
+"rs": 99.61
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-09-04",
+"rs": 97.86
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-09-09",
+"rs": 97.07
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-09-11",
+"rs": 97.22
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-09-15",
+"rs": 98.52
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-09-17",
+"rs": 97.56
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-09-21",
+"rs": 94.76
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-09-23",
+"rs": 96.06
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-09-25",
+"rs": 95.19
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-09-29",
+"rs": 95.84
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-01",
+"rs": 94.08
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-05",
+"rs": 93.59
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-07",
+"rs": 94.06
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-09",
+"rs": 95.88
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-13",
+"rs": 96.83
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-15",
+"rs": 100.49
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-19",
+"rs": 101.81
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-21",
+"rs": 100.82
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-23",
+"rs": 103.92
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-27",
+"rs": 101.32
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-10-29",
+"rs": 102.55
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-11-02",
+"rs": 108.06
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-11-04",
+"rs": 107.28
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-11-06",
+"rs": 109.62
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-11-10",
+"rs": 108.61
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-11-12",
+"rs": 107.62
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-11-16",
+"rs": 111.98
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-11-18",
+"rs": 111.73
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-11-20",
+"rs": 117.34
+},
+{
+"ticker": "XLP",
+"name": "Staples",
+"date": "2026-11-24",
+"rs": 114.38
 }
 ]
