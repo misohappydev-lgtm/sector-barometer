@@ -213,9 +213,9 @@ def analyze(s: pd.Series, spy: pd.Series) -> dict:
     }
 
 
-PERIODS = {"1d": 1, "1w": 5, "4w": 20, "3m": 63}  # trading days
-FLOW_MIN = {"1d": 0.002, "1w": 0.004, "4w": 0.005, "3m": 0.01}  # gap vs SPY needed to call a flow
-PERIOD_WORDS = {"1d": "today", "1w": "this week", "4w": "over the last 4 weeks", "3m": "over the last 3 months"}
+PERIODS = {"1d": 1, "1w": 5, "4w": 20, "3m": 63, "6m": 126}  # trading days
+FLOW_MIN = {"1d": 0.002, "1w": 0.004, "4w": 0.005, "3m": 0.01, "6m": 0.015}  # gap vs SPY needed to call a flow
+PERIOD_WORDS = {"1d": "today", "1w": "this week", "4w": "over the last 4 weeks", "3m": "over the last 3 months", "6m": "over the last 6 months"}
 
 
 def _ret(x: pd.Series, n0: int, n1: int) -> float:
@@ -276,7 +276,7 @@ def _verdict(r: dict, period: str) -> tuple[str, str]:
         v, mood = f"Risk-off {words}: stocks are trailing cash, and safe money is favoring {best}.", "off"
     else:
         v, mood = f"Mixed {words}: stocks are up, but bonds or gold are doing better.", "mixed"
-    lim = {"1d": 0.003, "1w": 0.006, "4w": 0.01, "3m": 0.02}[period]
+    lim = {"1d": 0.003, "1w": 0.006, "4w": 0.01, "3m": 0.02, "6m": 0.03}[period]
     if credit < -lim:
         v += " Junk bonds are lagging Treasuries, an early stress sign."
     elif credit > lim:
