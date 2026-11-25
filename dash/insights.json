@@ -3,105 +3,98 @@
 "kind": "strong",
 "ticker": "XLP",
 "name": "Staples",
-"score": 96,
-"reason": "Beat the S&P 500 on all three timeframes (+13.1% over 3 months); 6-month trend rising (+14.4% vs the market)."
+"score": 93,
+"reason": "Beat the S&P 500 on all three timeframes (+16.0% over 3 months); 6-month trend rising (+16.1% vs the market)."
 },
 {
 "kind": "strong",
 "ticker": "XLV",
 "name": "Health Care",
-"score": 90,
-"reason": "Beat the S&P 500 on all three timeframes (+12.8% over 3 months); 6-month trend rising (+30.0% vs the market)."
+"score": 89,
+"reason": "Beat the S&P 500 on all three timeframes (+14.3% over 3 months); 6-month trend rising (+28.6% vs the market)."
 },
 {
 "kind": "strong",
-"ticker": "XLY",
-"name": "Discretionary",
-"score": 71,
-"reason": "Beat the S&P 500 on all three timeframes (+6.6% over 3 months); 6-month trend rising (+1.0% vs the market)."
+"ticker": "XLRE",
+"name": "Real Estate",
+"score": 70,
+"reason": "Beat the S&P 500 on all three timeframes (+5.9% over 3 months); 6-month trend rising (+5.2% vs the market)."
 },
 {
 "kind": "dip",
 "ticker": "XLU",
 "name": "Utilities",
-"score": 65,
-"reason": "Beat the S&P 500 on all three timeframes (+6.4% over 3 months); 6-month trend rising (+1.2% vs the market); pullback, 7% below its high."
+"score": 69,
+"reason": "Beat the S&P 500 on all three timeframes (+8.6% over 3 months); 6-month trend rising (+3.8% vs the market); pullback, 7% below its high."
 },
 {
 "kind": "dip",
-"ticker": "XLF",
-"name": "Financials",
-"score": 53,
-"reason": "Beat the S&P 500 on all three timeframes (+2.6% over 3 months); 6-month trend rising (+14.2% vs the market); pullback, 5% below its high."
+"ticker": "XLY",
+"name": "Discretionary",
+"score": 51,
+"reason": "Beat the S&P 500 on all three timeframes (+8.4% over 3 months); 6-month trend rising (+1.3% vs the market); pullback, 5% below its high."
 },
 {
 "kind": "turning",
-"ticker": "XLB",
-"name": "Materials",
-"score": 42,
-"reason": "Ahead over 1 week, 4 weeks, behind over 3 months; 6-month trend rising (+2.7% vs the market); pullback, 7% below its high."
-},
-{
-"kind": "turning",
-"ticker": "XLC",
-"name": "Communication",
-"score": 36,
-"reason": "Ahead over 1 week, 4 weeks, behind over 3 months; 6-month trend falling (-6.1% vs the market); on sale, 12% below its high."
+"ticker": "XLI",
+"name": "Industrials",
+"score": 24,
+"reason": "Ahead over 1 week, 4 weeks, behind over 3 months; 6-month trend falling (-1.3% vs the market); on sale, 12% below its high."
 },
 {
 "kind": "avoid",
 "ticker": "XLK",
 "name": "Tech",
-"score": 10,
-"reason": "Trailed the S&P 500 on all three timeframes (-8.0% over 3 months); 6-month trend falling (-11.3% vs the market); on sale, 22% below its high."
+"score": 9,
+"reason": "Trailed the S&P 500 on all three timeframes (-10.5% over 3 months); 6-month trend falling (-12.4% vs the market); on sale, 23% below its high."
 },
 {
 "kind": "story",
 "ticker": "1y",
 "name": "Past year",
 "score": 0,
-"reason": "Risk-on, S&P 500 +10.2%. Best vs the S&P 500: Energy (+28.8%) and Health Care (+11.2%); worst: Communication (-15.7%) and Utilities (-9.0%)."
+"reason": "Risk-on, S&P 500 +8.3%. Best vs the S&P 500: Energy (+32.2%) and Staples (+14.8%); worst: Communication (-13.9%) and Utilities (-7.7%)."
 },
 {
 "kind": "story",
 "ticker": "6m",
 "name": "Past 6 months",
 "score": 0,
-"reason": "Risk-off, S&P 500 -3.7%. Best vs the S&P 500: Health Care (+28.9%) and Staples (+13.8%); worst: Tech (-10.9%) and Communication (-5.9%)."
+"reason": "Risk-off, S&P 500 -4.5%. Best vs the S&P 500: Health Care (+27.3%) and Financials (+15.5%); worst: Tech (-11.9%) and Communication (-4.6%)."
 },
 {
 "kind": "story",
 "ticker": "3m",
 "name": "Past 3 months",
 "score": 0,
-"reason": "Risk-off, S&P 500 -5.9%. Best vs the S&P 500: Staples (+13.1%) and Health Care (+12.8%); worst: Tech (-8.0%) and Industrials (-4.2%)."
+"reason": "Risk-off, S&P 500 -6.8%. Best vs the S&P 500: Staples (+16.0%) and Health Care (+14.3%); worst: Tech (-10.5%) and Industrials (-1.8%)."
 },
 {
 "kind": "story",
 "ticker": "4w",
 "name": "Past 4 weeks",
 "score": 0,
-"reason": "Risk-off, S&P 500 -6.6%. Best vs the S&P 500: Staples (+12.0%) and Health Care (+9.7%); worst: Tech (-10.5%) and Energy (-4.8%)."
+"reason": "Risk-off, S&P 500 -7.2%. Best vs the S&P 500: Staples (+13.5%) and Real Estate (+11.3%); worst: Tech (-11.2%) and Energy (-3.8%)."
 },
 {
 "kind": "story",
 "ticker": "1w",
 "name": "This week",
 "score": 0,
-"reason": "Risk-off, S&P 500 -1.9%. Best vs the S&P 500: Discretionary (+2.4%) and Staples (+2.3%); worst: Energy (-2.7%) and Tech (-1.9%)."
+"reason": "Risk-off, S&P 500 -1.8%. Best vs the S&P 500: Materials (+3.3%) and Health Care (+3.2%); worst: Tech (-3.0%) and Discretionary (+0.4%)."
 },
 {
 "kind": "story",
 "ticker": "1d",
 "name": "Today",
 "score": 0,
-"reason": "Risk-off, S&P 500 -0.5%. Best vs the S&P 500: Health Care (+3.4%) and Staples (+2.1%); worst: Tech (-2.8%) and Industrials (-0.0%)."
+"reason": "Risk-off, S&P 500 -0.3%. Best vs the S&P 500: Materials (+2.4%) and Real Estate (+1.2%); worst: Tech (-0.5%) and Health Care (-0.3%)."
 },
 {
 "kind": "takeaway",
 "ticker": "all",
 "name": "What it adds up to",
 "score": 0,
-"reason": "The mood turned risk-off somewhere between the past year and the past 6 months view, and it has held since. Steady leaders across the longer views: Health Care, Staples. Newer leaders (strong lately, not over the year): Real Estate. Fading former leaders: Energy."
+"reason": "The mood turned risk-off somewhere between the past year and the past 6 months view, and it has held since. Steady leaders across the longer views: Staples. Newer leaders (strong lately, not over the year): Real Estate, Utilities. Fading former leaders: Energy."
 }
 ]
