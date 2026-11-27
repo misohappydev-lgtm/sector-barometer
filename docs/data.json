@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T04:14+00:00",
+ "updated": "2026-11-27T09:50+00:00",
  "as_of": "2026-11-25",
  "sample": false,
  "safe_havens": {
@@ -251,6 +251,11 @@
   "history_start": "1993-01-29",
   "label": "Pullback",
   "why": "Down 8% from its high, an ordinary dip. Moving with the market, so this is mostly a broad dip.",
+  "ma200_slope": 0.0076,
+  "pe_pct": null,
+  "pe_trailing": null,
+  "pe_forward": null,
+  "val_word": null,
   "spark": [
    667.82,
    673.01,
@@ -355,8 +360,13 @@
    "rel_dd": -0.1692,
    "rel_3m": -0.1048,
    "history_start": "1998-12-22",
-   "label": "On Sale",
-   "why": "Down 23%, deeper than 86% of its history, and 5% off its recent low. Selling has slowed. Weaker than the market, so the dip is sector-specific.",
+   "label": "Pricey Dip",
+   "why": "Down 23%, but its P/E is still higher than 82% of its own history, so the drop hasn't made it cheap. Weaker than the market, so the dip is sector-specific.",
+   "ma200_slope": 0.0144,
+   "pe_pct": 82,
+   "pe_trailing": 35.28,
+   "pe_forward": 18.85,
+   "val_word": "Expensive",
    "spark": [
     139.51,
     142.44,
@@ -684,7 +694,7 @@
       ],
       [
        "2022-05-19",
-       -0.0579
+       -0.058
       ],
       [
        "2022-11-17",
@@ -1098,8 +1108,13 @@
    "rel_dd": -0.1275,
    "rel_3m": -0.018,
    "history_start": "1998-12-22",
-   "label": "On Sale",
-   "why": "Down 12%, deeper than 83% of its history, and 4% off its recent low. Selling has slowed. Weaker than the market, so the dip is sector-specific.",
+   "label": "Pricey Dip",
+   "why": "Down 12%, but its P/E is still higher than 92% of its own history, so the drop hasn't made it cheap. Weaker than the market, so the dip is sector-specific.",
+   "ma200_slope": 0.0002,
+   "pe_pct": 92,
+   "pe_trailing": 28.78,
+   "pe_forward": 22.52,
+   "val_word": "Expensive",
    "spark": [
     150.2,
     149.73,
@@ -1481,7 +1496,7 @@
       ],
       [
        "2018-11-15",
-       -0.0398
+       -0.0399
       ],
       [
        "2019-11-18",
@@ -1841,8 +1856,13 @@
    "rel_dd": -0.1572,
    "rel_3m": 0.0172,
    "history_start": "2018-06-19",
-   "label": "On Sale",
-   "why": "Down 11%, deeper than 78% of its history, and 5% off its recent low. Selling has slowed. Weaker than the market, so the dip is sector-specific.",
+   "label": "Downtrend",
+   "why": "Down 11% and below a falling 200-day average. Not crashing, but the trend is still down; wait for it to turn. Weaker than the market, so the dip is sector-specific.",
+   "ma200_slope": -0.0101,
+   "pe_pct": 20,
+   "pe_trailing": 15.18,
+   "pe_forward": 15.83,
+   "val_word": "Cheap",
    "spark": [
     112.9,
     113.45,
@@ -2568,8 +2588,13 @@
    "rel_dd": -0.1318,
    "rel_3m": 0.0517,
    "history_start": "1998-12-22",
-   "label": "On Sale",
-   "why": "Down 13%, deeper than 69% of its history, and 2% off its recent low. Selling has slowed. Weaker than the market, so the dip is sector-specific.",
+   "label": "Pricey Dip",
+   "why": "Down 13%, but its P/E is still higher than 76% of its own history, so the drop hasn't made it cheap. Weaker than the market, so the dip is sector-specific.",
+   "ma200_slope": 0.0245,
+   "pe_pct": 76,
+   "pe_trailing": 20.49,
+   "pe_forward": 13.67,
+   "val_word": "Expensive",
    "spark": [
     43.08,
     44.39,
@@ -3313,6 +3338,11 @@
    "history_start": "1998-12-22",
    "label": "Pullback",
    "why": "Down 7% from its high, an ordinary dip. Weaker than the market, so the dip is sector-specific.",
+   "ma200_slope": 0.0028,
+   "pe_pct": 80,
+   "pe_trailing": 19.31,
+   "pe_forward": 16.96,
+   "val_word": "Expensive",
    "spark": [
     43.17,
     43.03,
@@ -4056,6 +4086,11 @@
    "history_start": "1998-12-22",
    "label": "Pullback",
    "why": "Down 5% from its high, an ordinary dip. Weaker than the market, so the dip is sector-specific.",
+   "ma200_slope": -0.0019,
+   "pe_pct": 70,
+   "pe_trailing": 24.24,
+   "pe_forward": 23.76,
+   "val_word": "Expensive",
    "spark": [
     115.75,
     117.34,
@@ -4411,7 +4446,7 @@
       ],
       [
        "2025-11-24",
-       -0.0799
+       -0.08
       ],
       [
        "2026-05-28",
@@ -4799,6 +4834,11 @@
    "history_start": "1998-12-22",
    "label": "Normal",
    "why": "Within 5% of its 52-week high.",
+   "ma200_slope": 0.0046,
+   "pe_pct": 70,
+   "pe_trailing": 24.2,
+   "pe_forward": 17.08,
+   "val_word": "Expensive",
    "spark": [
     43.13,
     43.8,
@@ -5285,7 +5325,7 @@
      ],
      [
       "2026-06-09",
-      101.2
+      101.21
      ],
      [
       "2026-06-11",
@@ -5542,6 +5582,11 @@
    "history_start": "1998-12-22",
    "label": "Normal",
    "why": "Within 5% of its 52-week high.",
+   "ma200_slope": 0.0078,
+   "pe_pct": 76,
+   "pe_trailing": 16.55,
+   "pe_forward": 14.6,
+   "val_word": "Expensive",
    "spark": [
     51.72,
     52.07,
@@ -6285,6 +6330,11 @@
    "history_start": "1998-12-22",
    "label": "Normal",
    "why": "Within 5% of its 52-week high.",
+   "ma200_slope": 0.0194,
+   "pe_pct": 88,
+   "pe_trailing": 26.79,
+   "pe_forward": 19.92,
+   "val_word": "Expensive",
    "spark": [
     156.16,
     152.74,
@@ -7028,6 +7078,11 @@
    "history_start": "2015-10-08",
    "label": "Normal",
    "why": "Within 5% of its 52-week high.",
+   "ma200_slope": 0.0078,
+   "pe_pct": 77,
+   "pe_trailing": 42.25,
+   "pe_forward": 35.13,
+   "val_word": "Expensive",
    "spark": [
     39.88,
     39.69,
@@ -7767,6 +7822,11 @@
    "history_start": "1998-12-22",
    "label": "Normal",
    "why": "Within 5% of its 52-week high.",
+   "ma200_slope": 0.0102,
+   "pe_pct": 95,
+   "pe_trailing": 25.54,
+   "pe_forward": 23.24,
+   "val_word": "Expensive",
    "spark": [
     75.97,
     77.17,
@@ -8512,9 +8572,12 @@
   "XLE"
  ],
  "counts": {
-  "On Sale": 4,
+  "On Sale": 0,
+  "Pricey Dip": 3,
+  "Downtrend": 1,
   "Falling Knife": 0,
   "Pullback": 2,
   "Normal": 5
- }
+ },
+ "valuation_as_of": "2026-10-31"
 }

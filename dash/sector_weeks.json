@@ -354,7 +354,7 @@
 "name": "Tech",
 "period": "6m",
 "end": "2022-05-19",
-"rel": -0.0579
+"rel": -0.058
 },
 {
 "ticker": "XLK",
@@ -949,7 +949,7 @@
 "name": "Industrials",
 "period": "1y",
 "end": "2018-11-15",
-"rel": -0.0398
+"rel": -0.0399
 },
 {
 "ticker": "XLI",
@@ -2895,7 +2895,7 @@
 "name": "Discretionary",
 "period": "6m",
 "end": "2025-11-24",
-"rel": -0.0799
+"rel": -0.08
 },
 {
 "ticker": "XLY",
