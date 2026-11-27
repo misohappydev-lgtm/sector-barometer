@@ -54,6 +54,25 @@ OUT = Path(__file__).parent / "docs" / "data.json"
 # Label thresholds (drawdown from 52-week high, as a fraction)
 PULLBACK = -0.05
 CORRECTION = -0.10
+PRICEY_PCT = 70      # P/E above 70% of its own history = expensive
+CHEAP_PCT = 40       # P/E below 40% of its own history = cheap
+
+VALUATION = Path(__file__).parent / "dash" / "valuation.json"
+
+
+def load_valuation() -> dict:
+    """Monthly sector P/E percentiles vs each sector's own history (Siblis Research)."""
+    try:
+        v = json.loads(VALUATION.read_text())
+        return {"as_of": v.get("as_of"), "source": v.get("source"), **{"sectors": v.get("sectors", {})}}
+    except Exception:
+        return {"as_of": None, "source": None, "sectors": {}}
+
+
+def val_word(pct):
+    if pct is None:
+        return None
+    return "Expensive" if pct >= PRICEY_PCT else "Cheap" if pct <= CHEAP_PCT else "Fair"
 
 
 # ---------------------------------------------------------------- data
@@ -140,7 +159,7 @@ def rsi(s: pd.Series, n: int = 14) -> float:
     return float((100 - 100 / (1 + rs)).iloc[-1])
 
 
-def analyze(s: pd.Series, spy: pd.Series) -> dict:
+def analyze(s: pd.Series, spy: pd.Series, val: dict | None = None) -> dict:
     s = s.dropna()
     price = float(s.iloc[-1])
 
@@ -184,14 +203,25 @@ def analyze(s: pd.Series, spy: pd.Series) -> dict:
         why = f"Down {abs(dd52):.0%} from its high, an ordinary dip."
     else:
         knife = (vs_200 < 0 and ma200_slope < 0 and new_low_recent and r < 45)
+        pe_pct = (val or {}).get("pe_pct")
+        pricey = pe_pct is not None and pe_pct >= PRICEY_PCT
+        downtrend = vs_200 < 0 and ma200_slope < 0
         if knife:
             label = "Falling Knife"
             why = ("Still making new lows below a falling 200-day average. "
                    "Wait for selling to slow.")
+        elif pricey:
+            label = "Pricey Dip"
+            why = (f"Down {abs(dd52):.0%}, but its P/E is still higher than {pe_pct:.0f}% of its own history, "
+                   "so the drop hasn't made it cheap.")
+        elif downtrend:
+            label = "Downtrend"
+            why = (f"Down {abs(dd52):.0%} and below a falling 200-day average. Not crashing, "
+                   "but the trend is still down; wait for it to turn.")
         else:
             label = "On Sale"
-            why = (f"Down {abs(dd52):.0%}, deeper than {rarity:.0f}% of its history, "
-                   f"and {off_low:.0%} off its recent low. Selling has slowed.")
+            why = (f"Down {abs(dd52):.0%}, " + (f"valuation {val_word(pe_pct).lower()} vs its history, " if pe_pct is not None else "")
+                   + f"and {off_low:.0%} off its recent low with the trend intact.")
 
     if label != "Normal":
         if rel_dd < -0.05:
@@ -217,6 +247,12 @@ def analyze(s: pd.Series, spy: pd.Series) -> dict:
         "history_start": s.index[0].strftime("%Y-%m-%d"),
         "label": label,
         "why": why,
+        "vs_200": round(vs_200, 4),
+        "ma200_slope": round(ma200_slope, 4),
+        "pe_pct": (val or {}).get("pe_pct"),
+        "pe_trailing": (val or {}).get("trailing_pe"),
+        "pe_forward": (val or {}).get("forward_pe"),
+        "val_word": val_word((val or {}).get("pe_pct")),
         "spark": [round(float(v), 2) for v in spark.values],
     }
 
@@ -420,6 +456,9 @@ def build_insights(rows: list[dict], summary: dict, sh: dict) -> tuple[list[dict
             bits.append(f"6-month trend {'rising' if r['rs_6m'] > 0 else 'falling'} ({_p(r['rs_6m'])} vs the market)")
         if r["label"] != "Normal":
             bits.append(f"{r['label'].lower()}, {abs(r['dd52']) * 100:.0f}% below its high")
+        pp = r.get("pe_pct")
+        if pp is not None and pp == pp:
+            bits.append(f"valuation {val_word(pp).lower()} (P/E higher than {pp:.0f}% of its own history)")
         s = "; ".join(bits)
         return s[0].upper() + s[1:] + "."
 
@@ -432,7 +471,8 @@ def build_insights(rows: list[dict], summary: dict, sh: dict) -> tuple[list[dict
         out.append({"kind": "strong", "ticker": t, "name": r["name"], "score": int(r.score), "reason": reason(r)})
         used.add(t)
 
-    dips = ranked[ranked.label.isin(["On Sale", "Pullback"]) & (ranked.rel_3m > 0) & (ranked.rs_6m > 0) & ~ranked.index.isin(used)].head(2)
+    not_pricey = ranked.pe_pct.isna() | (ranked.pe_pct < PRICEY_PCT)
+    dips = ranked[ranked.label.isin(["On Sale", "Pullback"]) & (ranked.rel_3m > 0) & (ranked.rs_6m > 0) & not_pricey & ~ranked.index.isin(used)].head(2)
     for t, r in dips.iterrows():
         out.append({"kind": "dip", "ticker": t, "name": r["name"], "score": int(r.score), "reason": reason(r)})
         used.add(t)
@@ -525,7 +565,9 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
     summary = {"as_of": out["as_of"], "sample": out["sample"],
                "spy_dd52": out["benchmark"]["dd52"], "spy_label": out["benchmark"]["label"],
                "on_sale": out["counts"]["On Sale"], "falling_knife": out["counts"]["Falling Knife"],
-               "pullback": out["counts"]["Pullback"], "normal": out["counts"]["Normal"]}
+               "pricey_dip": out["counts"]["Pricey Dip"], "downtrend": out["counts"]["Downtrend"],
+               "pullback": out["counts"]["Pullback"], "normal": out["counts"]["Normal"],
+               "valuation_as_of": out.get("valuation_as_of")}
     spy_rows = {a["ticker"]: a for a in sh["assets"]}
     for key in PERIODS:
         summary[f"spy_ret_{key}"] = spy_rows["SPY"][f"ret_{key}"] if "SPY" in spy_rows else None
@@ -566,7 +608,9 @@ def write_dash(out: dict, mmf: list[dict]) -> None:
     for r in secs:
         row = {"ticker": r["ticker"], "name": SHORT[r["ticker"]], "label": r["label"], "why": r["why"],
                "dd52": r["dd52"], "rarity": r["rarity"], "since": r["history_start"][:4],
-               "chg_1m": r["chg_1m"], "rank": r["rank"]}
+               "chg_1m": r["chg_1m"], "rank": r["rank"],
+               "pe_pct": r.get("pe_pct"), "pe_trailing": r.get("pe_trailing"), "pe_forward": r.get("pe_forward"),
+               "val_word": r.get("val_word"), "vs_200": r.get("vs_200")}
         for key in PERIODS:
             row[f"ret_{key}"] = r["rotation"][f"ret_{key}"]
             row[f"rel_{key}"] = r["rotation"][f"rel_{key}"]
@@ -603,9 +647,10 @@ def main() -> None:
     closes, pe = fetch_sample() if args.sample else fetch_live()
     spy = closes[BENCHMARK].dropna()
 
+    valuation = load_valuation()
     rows = []
     for t, name in SECTORS.items():
-        m = analyze(closes[t], spy)
+        m = analyze(closes[t], spy, valuation["sectors"].get(t))
         m.update(ticker=t, name=name, pe=pe.get(t))
         m["rotation"] = rotation(closes[t].dropna(), spy)
         rows.append(m)
@@ -631,7 +676,8 @@ def main() -> None:
         "rotating_in": [r["ticker"] for r in flows_in],
         "rotating_out": [r["ticker"] for r in flows_out],
         "counts": {lab: sum(r["label"] == lab for r in rows)
-                   for lab in ["On Sale", "Falling Knife", "Pullback", "Normal"]},
+                   for lab in ["On Sale", "Pricey Dip", "Downtrend", "Falling Knife", "Pullback", "Normal"]},
+        "valuation_as_of": valuation["as_of"],
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1))

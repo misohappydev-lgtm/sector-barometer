@@ -1,0 +1,18 @@
+{
+ "source": "Siblis Research, U.S. sector valuations (https://siblisresearch.com/data/sectors/)",
+ "as_of": "2026-10-31",
+ "note": "pe_pct = share of the sector's own month-end P/E readings that were lower (higher = more expensive vs its history)",
+ "sectors": {
+  "XLC": {"trailing_pe": 15.18, "forward_pe": 15.83, "pe_pct": 20},
+  "XLY": {"trailing_pe": 24.24, "forward_pe": 23.76, "pe_pct": 70},
+  "XLP": {"trailing_pe": 25.54, "forward_pe": 23.24, "pe_pct": 95},
+  "XLE": {"trailing_pe": 20.49, "forward_pe": 13.67, "pe_pct": 76},
+  "XLF": {"trailing_pe": 16.55, "forward_pe": 14.60, "pe_pct": 76},
+  "XLV": {"trailing_pe": 26.79, "forward_pe": 19.92, "pe_pct": 88},
+  "XLI": {"trailing_pe": 28.78, "forward_pe": 22.52, "pe_pct": 92},
+  "XLK": {"trailing_pe": 35.28, "forward_pe": 18.85, "pe_pct": 82},
+  "XLB": {"trailing_pe": 24.20, "forward_pe": 17.08, "pe_pct": 70},
+  "XLRE": {"trailing_pe": 42.25, "forward_pe": 35.13, "pe_pct": 77},
+  "XLU": {"trailing_pe": 19.31, "forward_pe": 16.96, "pe_pct": 80}
+ }
+}
